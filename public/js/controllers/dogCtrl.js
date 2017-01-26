@@ -1,1 +1,4 @@
-angular.module('kombuchadog').controller('dogCtrl', ($scope, mainSrvc, $stateParams) => {});
+angular.module('kombuchadog').controller('dogCtrl', ($scope, mainSrvc, $stateParams) => {
+
+  
+});
