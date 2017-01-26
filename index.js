@@ -16,12 +16,15 @@ app.use(session({
 }));
 
 const conn = massive.connectSync({
-  connectionString : "postgres://postgres:@localhost/sustenance"
+  connectionString : "postgres://postgres:@localhost/kombuchadog-clone"
 });
 app.set('db', conn);
 const db = app.get('db');
 const mainController = require('./mainController');
 
+app.get('/our-dogs-up-for-adoption-index', mainController.getUpForAdoption);
+app.get('/success-stories-adopted-index', mainController.getAdopted);
+app.get('/our-dogs/:name', mainController.getDogProfile);
 
 
 

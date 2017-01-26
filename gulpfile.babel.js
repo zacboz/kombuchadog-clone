@@ -1,3 +1,10 @@
+// var gulp = require('gulp');
+// var concat = require('gulp-concat');
+// var sass = require('gulp-sass');
+// var babel = require('gulp-babel');
+// var plumber = require('gulp-plumber');
+// var sourcemaps = require('gulp-sourcemaps');
+
 import gulp from 'gulp';
 import concat from 'gulp-concat'; //bundles files
 import sass from 'gulp-sass'; //sass compiling/translating

@@ -1,0 +1,61 @@
+.site-nav {
+  padding: 45px 40px;
+  text-align: center; }
+
+.header {
+  padding: 16.5px 24px; }
+
+.header-title-logo {
+  max-width: 340px;
+  width: 100%; }
+
+.header-tagline {
+  color: gray;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 12px;
+  letter-spacing: .34em;
+  line-height: 0em;
+  text-transform: uppercase;
+  color: grey; }
+
+.header-cart {
+  font-family: "Open Sans", sans-serif;
+  font-size: 9.5px;
+  letter-spacing: .2em;
+  font-weight: 600;
+  position: relative;
+  line-height: 1em;
+  float: right;
+  text-align: right;
+  min-width: 0;
+  max-width: 40.22px;
+  width: 100%;
+  max-height: 42px;
+  height: 100%;
+  margin: -50px 0; }
+
+.cart {
+  color: #868686;
+  font-family: "Lato", sans-serif; }
+
+.header-items {
+  white-space: nowrap;
+  line-height: 1em;
+  margin: -10px 0; }
+
+.header-nav-item {
+  color: #868686;
+  display: inline-block;
+  padding: .618em;
+  vertical-align: middle;
+  font-family: "Lato", sans-serif;
+  font-size: 9.2px;
+  letter-spacing: .2em;
+  font-weight: 600; }
+
+a {
+  text-decoration: none;
+  cursor: pointer; }
