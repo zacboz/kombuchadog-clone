@@ -22,9 +22,11 @@ app.set('db', conn);
 const db = app.get('db');
 const mainController = require('./mainController');
 
-app.get('/our-dogs-up-for-adoption-index', mainController.getUpForAdoption);
-app.get('/success-stories-adopted-index', mainController.getAdopted);
+app.get('/our-dogs-index', mainController.getUpForAdoption);
+app.get('/success-stories-index', mainController.getAdopted);
 app.get('/our-dogs/:name', mainController.getDogProfile);
+app.get('/merchandise-index', mainController.getMerchandise);
+app.get('/merchandise/:id', mainController.getMerchandiseDetails);
 
 
 

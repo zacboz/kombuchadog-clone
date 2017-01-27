@@ -1,0 +1,198 @@
+.success-body {
+  max-width: 1200px;
+  max-height: 100%
+}
+
+.success-banner {
+  background-image: url('/images/dog-banners-v2-2.jpg');
+  background-repeat: no-repeat;
+  background-position: 66.5% 65%;
+  background-size: 305%;
+  padding-top: 175px;
+  padding-bottom: 175px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  content: '';
+  margin: 0 auto;
+}
+
+.success-gallery {
+  padding: 25px 0px 0 12px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: auto;
+}
+
+.success-grid-container {
+  position: relative;
+  float: left;
+}
+
+.success-grid-container:nth-child(1) {
+  max-width: 66.67%;
+  img{
+    height: 97%;
+    width: 97%;
+    display: block;
+    padding-bottom: 20px;
+  }
+}
+
+.success-grid-container:nth-child(2) {
+  max-width: 33.33%;
+  img{
+    display: block;
+    height: 94%;
+    width: 94%;
+    padding-bottom: 20px;
+  }
+}
+
+.success-grid-container:nth-child(3) {
+  max-width: 33.33%;
+  img{
+    display: block;
+    height: 94%;
+    width: 94%;
+    padding-bottom: 20px;
+  }
+}
+
+.success-grid-container:nth-child(4) {
+  max-width: 33.33%;
+  img{
+    display: block;
+    height: 94%;
+    width: 94%;
+    padding-bottom: 20px;
+  }
+}
+
+.success-grid-container:nth-child(5) {
+  max-width: 66.67%;
+  img{
+    height: 97%;
+    width: 103.5%;
+    display: block;
+    padding-bottom: 20px;
+  }
+}
+
+.success-grid-container:nth-child(6) {
+  max-width: 33.33%;
+  margin-top: -33.7%;
+  img{
+    display: block;
+    height: 94%;
+    width: 94%;
+    padding-bottom: 20px;
+  }
+}
+
+.success-grid-container:nth-child(7) {
+  max-width: 66.67%;
+  clear: both;
+  img{
+    height: 97%;
+    width: 103.5%;
+    display: block;
+    padding-bottom: 20px;
+  }
+}
+
+.success-grid-container:nth-child(8) {
+  max-width: 33.33%;
+  margin-left: 50px;
+  img{
+    display: block;
+    height: 94%;
+    width: 94%;
+    padding-bottom: 20px;
+  }
+}
+
+.success-grid-container:nth-child(9) {
+  max-width: 33.33%;
+  margin-left: 50px;
+  img{
+    display: block;
+    height: 94%;
+    width: 94%;
+    padding-bottom: 20px;
+  }
+}
+
+.success-grid-container:nth-child(10) {
+  max-width: 50%;
+  img{
+    display: block;
+    height: 95%;
+    width: 96%;
+    padding-bottom: 19px;
+  }
+}
+
+.success-grid-container:nth-child(11) {
+  max-width: 50%;
+  img{
+    display: block;
+    height: 95%;
+    width: 96%;
+    padding-bottom: 19px;
+  }
+}
+
+.success-grid-container:nth-child(12) {
+  max-width: 66.67%;
+  img{
+    height: 97%;
+    width: 103.5%;
+    display: block;
+    padding-bottom: 20px;
+  }
+}
+
+.success-grid-container:nth-child(13) {
+  max-width: 33.33%;
+  margin-left: 50px;
+  img{
+    display: block;
+    height: 94%;
+    width: 94%;
+    padding-bottom: 20px;
+  }
+}
+
+.success-grid-container:nth-child(14) {
+  max-width: 33.33%;
+  margin-left: 50px;
+  img{
+    display: block;
+    height: 94%;
+    width: 94%;
+    padding-bottom: 20px;
+  }
+}
+
+.success-grid-container:nth-child(15) {
+  max-width: 50%;
+  img{
+    display: block;
+    height: 96%;
+    width: 96%;
+    padding-bottom: 20px;
+  }
+}
+
+.success-grid-container:nth-child(16) {
+  width: 50%;
+  img{
+    display: block;
+    height: 95%;
+    width: 96%;
+    padding-bottom: 20px;
+  }
+}

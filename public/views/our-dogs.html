@@ -1,0 +1,29 @@
+
+<div class='our-dogs-body'>
+  <div class='banner-container'>
+    <div class='our-dogs-banner'>
+      <div class='view-title'>
+        <h2>OUR DOGS - UP FOR ADOPTION</h2>
+      </div>
+      <div class='view-desc'>
+        <p>These are our dogs that are currently up for adoption. Click on a dog to find out more.</p>
+        <p>To read success stories, click on the link below.</p>
+      </div>
+      <div class='block-button-container'>
+        <a ui-sref="success-stories" class="block-button">SUCCESS STORIES</a>
+      </div>
+    </div>
+  </div>
+  <div class='our-dogs-gallery'>
+    <div class='dog-grid-container' ng-repeat="dog in dogs">
+      <a class="dog-grid-link">
+        <img class="dog-grid-img" alt="" ng-src="{{dog.image}}">
+      </a>
+      <div class='dog-name-container'>
+        <a class='dog-name' ui-sref='dog-profile'>{{dog.name}}</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- <div ng-class="$index%5===0 || $index%6===0 || $index===15 || $index===16 ? 'red':'blue'" ng-repeat='dog in dogs track by $index'> -->

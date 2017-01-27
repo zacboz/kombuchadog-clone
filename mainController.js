@@ -5,8 +5,13 @@ module.exports = {
 
 getUpForAdoption: (req, res) => {
   db.read_upForAdoption((err, response) => {
-    console.log('getting our dogs', response)
-    res.status(200).json(response);
+    if(err) {
+      console.log(err);
+      res.status(200).json(err);
+    } else {
+      console.log('getting our dogs', response)
+      res.status(200).json(response);
+    }
   });
 },
 

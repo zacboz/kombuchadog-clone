@@ -24,16 +24,16 @@
   font-size: 8.8px;
   letter-spacing: .3em;
   font-weight: 600;
-  position: relative;
+  position: absolute;
   line-height: 1em;
-  float: right;
   text-align: right;
   min-width: 0;
   max-width: 58px;
   width: 100%;
   max-height: 42px;
   height: 100%;
-  margin: -50px 0; }
+  right: 0;
+  margin: -50px 50px; }
 
 .cart {
   color: #868686;
@@ -79,6 +79,7 @@ a, .dropbtn {
 .dropdown-content {
   display: none;
   position: absolute;
+  background-color: white;
   min-width: 107px;
   z-index: 1; }
 
@@ -99,21 +100,29 @@ a, .dropbtn {
 .dropdown:hover .dropdown-content {
   display: block; }
 
+body {
+  background-color: #ffffff;
+  max-width: 1200px;
+  max-height: 100%;
+  margin-left: auto;
+  margin-right: auto; }
+
+.main-wrapper {
+  background-color: #ffffff;
+  max-width: 1200px;
+  height: auto; }
+
 .footer-container {
   text-align: center;
-  padding: 100px 64px 175px 64px; }
+  padding: 100px 64px 175px 64px;
+  max-height: 490px;
+  max-width: 1200px; }
 
 .social-icons {
   box-sizing: border-box;
   width: 100%;
-  margin-right: auto;
-  margin-left: auto;
-  padding: 45px 17px;
-  position: relative;
   height: auto;
-  outline: none;
-  box-shadow: inset 0 0 0 1px rgba(128, 128, 128, 0);
-  transition: box-shadow .2s ease-in-out; }
+  padding: 45px 17px; }
 
 .social-icon {
   font-size: 18px;
@@ -133,3 +142,395 @@ a, .dropbtn {
   font-weight: 600;
   line-height: 2em;
   padding-right: .6em; }
+
+.our-dogs-body {
+  max-width: 1200px;
+  max-height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: auto; }
+
+.our-dogs-banner {
+  background-image: url("/images/dog-banners-v2.jpg");
+  background-repeat: no-repeat;
+  background-position: 34.5% 65%;
+  background-size: 315%;
+  padding-top: 175px;
+  padding-bottom: 175px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  content: '';
+  text-align: center; }
+
+.view-title {
+  font-family: "Teko", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: .2em;
+  line-height: 1.4em;
+  text-transform: uppercase;
+  text-align: center;
+  color: black;
+  padding-bottom: 1px; }
+
+.view-desc {
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  letter-spacing: .06em;
+  font-weight: 600;
+  text-align: center;
+  font-weight: 400;
+  padding-bottom: 10px; }
+
+.block-button-container {
+  text-align: center;
+  padding: 20px 20px; }
+
+.block-button {
+  border: solid;
+  border-color: black;
+  border-radius: 3px;
+  border-width: 2px;
+  font-family: "Lato", sans-serif;
+  font-size: 10px;
+  letter-spacing: .2em;
+  text-align: center;
+  font-weight: 600;
+  height: auto;
+  width: auto;
+  padding: 22px 38px; }
+
+.block-button:hover {
+  background-color: black;
+  color: white; }
+
+.our-dogs-gallery {
+  padding: 25px 0px 0 12px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: auto; }
+
+.dog-grid-container {
+  position: relative;
+  float: left; }
+
+.dog-grid-container:nth-child(1) {
+  max-width: 66.67%; }
+  .dog-grid-container:nth-child(1) img {
+    height: 97%;
+    width: 97%;
+    display: block;
+    padding-bottom: 20px; }
+
+.dog-grid-container:nth-child(2) {
+  max-width: 33.33%; }
+  .dog-grid-container:nth-child(2) img {
+    display: block;
+    height: 94%;
+    width: 94%;
+    padding-bottom: 20px; }
+
+.dog-grid-container:nth-child(3) {
+  max-width: 33.33%; }
+  .dog-grid-container:nth-child(3) img {
+    display: block;
+    height: 94%;
+    width: 94%;
+    padding-bottom: 20px; }
+
+.dog-grid-container:nth-child(4) {
+  max-width: 33.33%; }
+  .dog-grid-container:nth-child(4) img {
+    display: block;
+    height: 94%;
+    width: 94%;
+    padding-bottom: 20px; }
+
+.dog-grid-container:nth-child(5) {
+  max-width: 66.67%; }
+  .dog-grid-container:nth-child(5) img {
+    height: 97%;
+    width: 97%;
+    display: block;
+    padding-bottom: 20px; }
+
+.dog-grid-container:nth-child(6) {
+  max-width: 33.33%;
+  margin-top: -33.7%; }
+  .dog-grid-container:nth-child(6) img {
+    display: block;
+    height: 94%;
+    width: 94%;
+    padding-bottom: 20px; }
+
+.dog-grid-container:nth-child(7) {
+  max-width: 66.67%; }
+  .dog-grid-container:nth-child(7) img {
+    height: 97%;
+    width: 97%;
+    display: block;
+    padding-bottom: 20px; }
+
+.dog-grid-container:nth-child(8) {
+  max-width: 33.33%; }
+  .dog-grid-container:nth-child(8) img {
+    display: block;
+    height: 94%;
+    width: 94%;
+    padding-bottom: 20px; }
+
+.dog-grid-container:nth-child(9) {
+  max-width: 33.33%; }
+  .dog-grid-container:nth-child(9) img {
+    display: block;
+    height: 94%;
+    width: 94%;
+    padding-bottom: 20px; }
+
+.dog-grid-container:nth-child(10) {
+  max-width: 33.33%; }
+  .dog-grid-container:nth-child(10) img {
+    display: block;
+    height: 94%;
+    width: 94%;
+    padding-bottom: 20px; }
+
+.dog-grid-container:nth-child(11) {
+  max-width: 66.67%; }
+  .dog-grid-container:nth-child(11) img {
+    height: 97%;
+    width: 97%;
+    display: block;
+    padding-bottom: 20px; }
+
+.dog-grid-container:nth-child(12) {
+  max-width: 33.33%;
+  margin-top: -33.7%; }
+  .dog-grid-container:nth-child(12) img {
+    display: block;
+    height: 94%;
+    width: 94%;
+    padding-bottom: 20px; }
+
+.dog-grid-container:nth-child(13) {
+  max-width: 66.67%; }
+  .dog-grid-container:nth-child(13) img {
+    height: 97%;
+    width: 97%;
+    display: block;
+    padding-bottom: 20px; }
+
+.dog-grid-container:nth-child(14) {
+  max-width: 33.33%; }
+  .dog-grid-container:nth-child(14) img {
+    display: block;
+    height: 94%;
+    width: 94%;
+    padding-bottom: 20px; }
+
+.dog-grid-container:nth-child(15) {
+  max-width: 33.33%; }
+  .dog-grid-container:nth-child(15) img {
+    display: block;
+    height: 94%;
+    width: 94%;
+    padding-bottom: 20px; }
+
+.dog-grid-container:nth-child(16) {
+  max-width: 50%; }
+  .dog-grid-container:nth-child(16) img {
+    display: block;
+    height: 95%;
+    width: 95%;
+    padding-bottom: 20px; }
+
+.dog-grid-container:nth-child(17) {
+  max-width: 50%; }
+  .dog-grid-container:nth-child(17) img {
+    display: block;
+    height: 95%;
+    width: 95%;
+    padding-bottom: 20px; }
+
+.dog-name-container {
+  position: absolute;
+  float: left;
+  top: 0;
+  width: 130px;
+  height: 50px;
+  z-index: 1;
+  padding: 35px 35px; }
+
+.dog-name {
+  color: gray;
+  font-family: "Lato", sans-serif;
+  font-size: 10px;
+  letter-spacing: .3em;
+  font-weight: 600;
+  text-transform: uppercase; }
+
+.success-body {
+  max-width: 1200px;
+  max-height: 100%; }
+
+.success-banner {
+  background-image: url("/images/dog-banners-v2-2.jpg");
+  background-repeat: no-repeat;
+  background-position: 66.5% 65%;
+  background-size: 305%;
+  padding-top: 175px;
+  padding-bottom: 175px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  content: '';
+  margin: 0 auto; }
+
+.success-gallery {
+  padding: 25px 0px 0 12px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: auto; }
+
+.success-grid-container {
+  position: relative;
+  float: left; }
+
+.success-grid-container:nth-child(1) {
+  max-width: 66.67%; }
+  .success-grid-container:nth-child(1) img {
+    height: 97%;
+    width: 97%;
+    display: block;
+    padding-bottom: 20px; }
+
+.success-grid-container:nth-child(2) {
+  max-width: 33.33%; }
+  .success-grid-container:nth-child(2) img {
+    display: block;
+    height: 94%;
+    width: 94%;
+    padding-bottom: 20px; }
+
+.success-grid-container:nth-child(3) {
+  max-width: 33.33%; }
+  .success-grid-container:nth-child(3) img {
+    display: block;
+    height: 94%;
+    width: 94%;
+    padding-bottom: 20px; }
+
+.success-grid-container:nth-child(4) {
+  max-width: 33.33%; }
+  .success-grid-container:nth-child(4) img {
+    display: block;
+    height: 94%;
+    width: 94%;
+    padding-bottom: 20px; }
+
+.success-grid-container:nth-child(5) {
+  max-width: 66.67%; }
+  .success-grid-container:nth-child(5) img {
+    height: 97%;
+    width: 103.5%;
+    display: block;
+    padding-bottom: 20px; }
+
+.success-grid-container:nth-child(6) {
+  max-width: 33.33%;
+  margin-top: -33.7%; }
+  .success-grid-container:nth-child(6) img {
+    display: block;
+    height: 94%;
+    width: 94%;
+    padding-bottom: 20px; }
+
+.success-grid-container:nth-child(7) {
+  max-width: 66.67%;
+  clear: both; }
+  .success-grid-container:nth-child(7) img {
+    height: 97%;
+    width: 103.5%;
+    display: block;
+    padding-bottom: 20px; }
+
+.success-grid-container:nth-child(8) {
+  max-width: 33.33%;
+  margin-left: 50px; }
+  .success-grid-container:nth-child(8) img {
+    display: block;
+    height: 94%;
+    width: 94%;
+    padding-bottom: 20px; }
+
+.success-grid-container:nth-child(9) {
+  max-width: 33.33%;
+  margin-left: 50px; }
+  .success-grid-container:nth-child(9) img {
+    display: block;
+    height: 94%;
+    width: 94%;
+    padding-bottom: 20px; }
+
+.success-grid-container:nth-child(10) {
+  max-width: 50%; }
+  .success-grid-container:nth-child(10) img {
+    display: block;
+    height: 95%;
+    width: 96%;
+    padding-bottom: 19px; }
+
+.success-grid-container:nth-child(11) {
+  max-width: 50%; }
+  .success-grid-container:nth-child(11) img {
+    display: block;
+    height: 95%;
+    width: 96%;
+    padding-bottom: 19px; }
+
+.success-grid-container:nth-child(12) {
+  max-width: 66.67%; }
+  .success-grid-container:nth-child(12) img {
+    height: 97%;
+    width: 103.5%;
+    display: block;
+    padding-bottom: 20px; }
+
+.success-grid-container:nth-child(13) {
+  max-width: 33.33%;
+  margin-left: 50px; }
+  .success-grid-container:nth-child(13) img {
+    display: block;
+    height: 94%;
+    width: 94%;
+    padding-bottom: 20px; }
+
+.success-grid-container:nth-child(14) {
+  max-width: 33.33%;
+  margin-left: 50px; }
+  .success-grid-container:nth-child(14) img {
+    display: block;
+    height: 94%;
+    width: 94%;
+    padding-bottom: 20px; }
+
+.success-grid-container:nth-child(15) {
+  max-width: 50%; }
+  .success-grid-container:nth-child(15) img {
+    display: block;
+    height: 96%;
+    width: 96%;
+    padding-bottom: 20px; }
+
+.success-grid-container:nth-child(16) {
+  width: 50%; }
+  .success-grid-container:nth-child(16) img {
+    display: block;
+    height: 95%;
+    width: 96%;
+    padding-bottom: 20px; }

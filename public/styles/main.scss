@@ -38,16 +38,16 @@ $lato: 'Lato', sans-serif;
   font-size: 8.8px;
   letter-spacing: .3em;
   font-weight: 600;
-  position: relative;
+  position: absolute;
   line-height: 1em;
-  float: right;
   text-align: right;
   min-width: 0;
   max-width: 58px;
   width: 100%;
   max-height: 42px;
   height: 100%;
-  margin: -50px 0;
+  right: 0;
+  margin: -50px 50px;;
 }
 
 .cart {
@@ -105,7 +105,7 @@ a, .dropbtn {
 .dropdown-content {
   display: none;
     position: absolute;
-    // background-color: #f9f9f9;
+    background-color: white;
     min-width: 107px;
     // box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -133,25 +133,39 @@ a, .dropbtn {
 
 
 body {
+  background-color: #ffffff;
+  max-width: 1200px;
+  max-height: 100%;
+  // width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
 
+.main-wrapper {
+  background-color: #ffffff;
+  max-width: 1200px;
+  height: auto;
 }
 
 .footer-container {
   text-align: center;
   padding: 100px 64px 175px 64px;
+  // position: relative;
+  max-height: 490px;
+  max-width: 1200px;
 }
 
 .social-icons {
   box-sizing: border-box;
   width: 100%;
-  margin-right: auto;
-  margin-left: auto;
-  padding: 45px 17px;
-  position: relative;
   height: auto;
-  outline: none;
-  box-shadow: inset 0 0 0 1px rgba(128,128,128,0);
-  transition: box-shadow .2s ease-in-out;
+  // margin-right: auto;
+  // margin-left: auto;
+  padding: 45px 17px;
+  // position: relative;
+  // outline: none;
+  // box-shadow: inset 0 0 0 1px rgba(128,128,128,0);
+  // transition: box-shadow .2s ease-in-out;
 }
 
 .social-icon {

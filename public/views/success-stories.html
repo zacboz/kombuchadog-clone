@@ -1,0 +1,24 @@
+<div class='success-body'>
+  <div class='success-banner'>
+    <div class='view-title'>
+      <h2>OUR DOGS – SUCCESS STORIES</h2>
+    </div>
+    <div class='view-desc'>
+      <p>These are our dogs that have already found their forever home.</p>
+      <p>To meet our dogs that are currently up for adoption, click on the link below.</p>
+    </div>
+    <div class='block-button-container'>
+      <a ui-sref="our-dogs" class="block-button">ADOPT</a>
+    </div>
+  </div>
+  <div class='success-gallery'>
+    <div class='success-grid-container' ng-repeat="dog in adopted">
+      <a class="success-grid-link">
+        <img class="success-grid-img" alt="" ng-src="{{dog.image}}">
+      </a>
+      <div class='dog-name-container'>
+        <a class='dog-name' ui-sref='dog-profile'>{{dog.name}}</a>
+      </div>
+    </div>
+  </div>
+</div>

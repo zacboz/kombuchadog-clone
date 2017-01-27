@@ -1,5 +1,5 @@
 angular.module('kombuchadog', ['ui.router'])
-  .config(function($stateProvider, $urlRouterProvider){
+  .config(($stateProvider, $urlRouterProvider) => {
       $stateProvider
             .state('home',{
               url:'/',
@@ -26,7 +26,7 @@ angular.module('kombuchadog', ['ui.router'])
             .state('success-stories',{
                 url:'/success-stories',
                 templateUrl: './views/success-stories.html',
-                controller: 'dogCtrl'
+                controller: 'successCtrl'
             })
             .state('find-kombucha',{
                 url:'/find-kombucha',
