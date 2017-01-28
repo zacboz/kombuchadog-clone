@@ -1,1 +1,2 @@
-angular.module('kombuchadog').controller('cartCtrl', ($scope, mainSrvc, $stateParams) => {});
+angular.module('kombuchadog')
+.controller('cartCtrl', function($scope, mainSrvc, $stateParams){});

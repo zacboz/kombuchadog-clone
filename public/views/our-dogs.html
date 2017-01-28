@@ -16,11 +16,11 @@
   </div>
   <div class='our-dogs-gallery'>
     <div class='dog-grid-container' ng-repeat="dog in dogs">
-      <a class="dog-grid-link">
-        <img class="dog-grid-img" alt="" ng-src="{{dog.image}}">
+      <a class="dog-grid-link" ui-sref='dog-profile({name: dog.name})'>
+        <img class="dog-grid-img" alt="dog image" ng-src="{{dog.image}}">
       </a>
       <div class='dog-name-container'>
-        <a class='dog-name' ui-sref='dog-profile'>{{dog.name}}</a>
+        <a class='dog-name' ui-sref='dog-profile({name: dog.name})'>{{dog.name}}</a>
       </div>
     </div>
   </div>

@@ -13,11 +13,11 @@
   </div>
   <div class='success-gallery'>
     <div class='success-grid-container' ng-repeat="dog in adopted">
-      <a class="success-grid-link">
-        <img class="success-grid-img" alt="" ng-src="{{dog.image}}">
+      <a class="success-grid-link" ui-sref='dog-profile({name: dog.name})'>
+        <img class="success-grid-img" alt="dog image" ng-src="{{dog.image}}">
       </a>
       <div class='dog-name-container'>
-        <a class='dog-name' ui-sref='dog-profile'>{{dog.name}}</a>
+        <a class='dog-name' ui-sref='dog-profile({name: dog.name})'>{{dog.name}}</a>
       </div>
     </div>
   </div>

@@ -1,8 +1,8 @@
 
 
-<a class="merchandise-link" ui-sref='merchandise-details'>
+<a class="merchandise-link" ui-sref='merchandise-details({id: product.id})'>
   <img class="merchandise-img" alt="" ng-src="{{product.image}}">
 </a>
 <div class='item-name-container'>
-  <a class='item-name' ui-sref='merchandise-details'>{{product.item}}</a>
+  <a class='item-name' ui-sref='merchandise-details({id: product.id})'>{{product.item}}</a>
 </div>

@@ -19,9 +19,9 @@ angular.module('kombuchadog', ['ui.router'])
                 controller: 'dogCtrl'
             })
             .state('dog-profile',{
-                url:'/profile/:name',
-                templateUrl: './views/dog-profile.html',
-                controller: 'dogCtrl'
+                url:'/dog-profile/:name',
+                templateUrl: './views/profile.html',
+                controller: 'profileCtrl'
             })
             .state('success-stories',{
                 url:'/success-stories',
@@ -39,9 +39,9 @@ angular.module('kombuchadog', ['ui.router'])
                 controller: 'merchandiseCtrl'
             })
             .state('merchandise-details',{
-                url:'/merchandise-details',
+                url:'/merchandise-details/:id',
                 templateUrl: './views/merchandise-details.html',
-                controller: 'merchandiseCtrl'
+                controller: 'detailsCtrl'
             })
             .state('cart',{
                 url:'/cart',

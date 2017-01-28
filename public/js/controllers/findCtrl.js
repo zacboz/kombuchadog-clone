@@ -1,1 +1,2 @@
-angular.module('kombuchadog').controller('findCtrl', ($scope, mainSrvc, $stateParams) => {});
+angular.module('kombuchadog')
+.controller('findCtrl', function($scope, mainSrvc, $stateParams){});
