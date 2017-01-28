@@ -1,0 +1,48 @@
+$lato: 'Lato', sans-serif;
+$tagline: rgb(128, 128, 128);
+
+.merchandise-body {
+  max-width: 1200px;
+  max-height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: auto;
+}
+
+.merchandise-gallery {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: auto;
+  padding: 25px 0 0 12px;
+}
+
+.merchandise-container {
+  width: 50%;
+  float: left;
+  position: relative;
+}
+
+.merchandise-img {
+  width: 96%;
+  padding: 10px 0;
+}
+
+.item-name-container {
+  position: absolute;
+  float: left;
+  top: 0;
+  width: 150px;
+  height: 50px;
+  z-index: 1;
+  padding: 35px 35px;
+}
+
+.item-name {
+  color: gray;
+  font-family: $lato;
+  font-size: 10px;
+  letter-spacing: .3em;
+  font-weight: 600;
+  text-transform: uppercase;
+}

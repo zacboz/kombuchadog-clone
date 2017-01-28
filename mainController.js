@@ -37,6 +37,30 @@ getDogProfile: (req, res) => {
       res.status(200).json(response);
     }
   });
-}
+},
+
+getMerchandise: (req, res) => {
+  db.read_merchandise((err, response) => {
+    if(err) {
+      console.log(err);
+      res.status(200).json(err);
+    } else {
+      console.log('getting merchandise', response)
+      res.status(200).json(response);
+    }
+  });
+},
+
+getMerchandiseDetails: (req, res) => {
+  db.read_merchandiseDetails(req.params.id, (err, response) => {
+    if(err) {
+      console.log(err);
+      res.status(200).json(err);
+    } else {
+      console.log('getting merchandise details', response)
+      res.status(200).json(response);
+    }
+  });
+},
 
 };

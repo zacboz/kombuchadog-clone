@@ -6,7 +6,6 @@ angular.module('kombuchadog').service('mainSrvc', function($http) {
       url: '/our-dogs-index'
     }).then((response) => {
       return response;
-      console.log(response);
     });
   };
 
@@ -18,5 +17,15 @@ angular.module('kombuchadog').service('mainSrvc', function($http) {
       return response;
     });
   };
+
+  this.getMerchandise = () => {
+    return $http({
+      method: 'GET',
+      url: '/merchandise-index'
+    }).then((response) => {
+      return response;
+      console.log(response);
+    })
+  }
 
 });
