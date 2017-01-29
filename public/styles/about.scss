@@ -1,0 +1,50 @@
+$cart: rgb(134, 134, 134);
+$lato: 'Lato', sans-serif;
+$tagline: rgb(125, 125, 125);
+$teko: 'Teko', sans-serif;
+$story: rgba(82,82,82,.6);
+
+.about-wrapper {
+  max-width: 1200px;
+  padding: 15px 65px;
+  overflow: auto;
+  // height: auto;
+}
+
+.image-wrapper {
+  width: 100%;
+  height: 570px;
+  // height: 100%
+}
+
+.about-image {
+  width: 100%;
+  height: 100%;
+  background-image: url('/images/gabe_cooler.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.content-wrapper {
+  padding: 118px 275px;
+  overflow: auto;
+}
+
+.about-header {
+  h1 {
+    font-family: $teko;
+    color: black;
+    font-weight: 500;
+    font-size: 27px;
+    letter-spacing: .1em;
+  }
+}
+
+.about-content {
+    font-family: $lato;
+    color: $tagline;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: .1em;
+    line-height: 2.8em;
+}
