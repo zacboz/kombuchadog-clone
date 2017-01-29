@@ -1,3 +1,149 @@
+.details-body {
+  max-width: 1200px;
+  max-height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: auto; }
+
+.prev-next {
+  padding-left: 62px; }
+  .prev-next p {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 9px;
+    letter-spacing: .22em;
+    color: gray; }
+
+.details-gallery {
+  padding: 25px 0px 0px 12px;
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: auto; }
+
+.details-column {
+  width: 40%;
+  height: 100%;
+  float: left;
+  padding: 0 50px; }
+
+.details-title {
+  overflow: auto; }
+  .details-title .shirt-title {
+    font-family: "Teko", sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    letter-spacing: .11em;
+    line-height: 1em;
+    color: black;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+    margin-top: 0px; }
+
+.details-price {
+  overflow: auto; }
+  .details-price .price {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: .15em;
+    color: rgba(82, 82, 82, 0.6);
+    margin-bottom: 14px;
+    margin-top: 18px; }
+
+.details {
+  overflow: auto;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: .1em;
+  color: rgba(82, 82, 82, 0.6); }
+  .details p {
+    margin-bottom: 25px; }
+
+.selectors {
+  overflow: auto; }
+  .selectors p {
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    font-size: 11px;
+    letter-spacing: .13em;
+    color: gray;
+    margin-bottom: 5px; }
+
+.select-size-wrapper {
+  background-color: #f6f6f6;
+  height: 22px;
+  width: 152px;
+  font-size: 12px;
+  letter-spacing: .3em;
+  line-height: 1.9;
+  text-align: center;
+  padding: 8px 0;
+  margin-bottom: 25px; }
+
+.select-size-wrapper:after {
+  content: '\25BE';
+  color: gray;
+  font-size: 12px;
+  margin-left: 5px;
+  font-family: sans-serif !important; }
+
+.select-size {
+  border: none;
+  border-radius: 0;
+  -webkit-appearance: none;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  font-size: 11px;
+  letter-spacing: .15em;
+  color: gray; }
+
+.opt {
+  background-color: red;
+  padding: 0 0;
+  margin: 0 0;
+  line-height: 10px; }
+
+.quantity-input {
+  background-color: #f6f6f6;
+  height: 21px;
+  width: 40px;
+  padding: 8px 22px;
+  border: none;
+  border-radius: 0;
+  -webkit-appearance: none;
+  margin-bottom: 25px;
+  color: gray;
+  font-size: 12px; }
+
+.add-button {
+  border: solid;
+  border-color: black;
+  border-radius: 3px;
+  border-width: 2px;
+  font-family: "Lato", sans-serif;
+  font-size: 10px;
+  letter-spacing: .2em;
+  text-align: center;
+  font-weight: 600;
+  height: auto;
+  width: auto;
+  padding: 26px 48px; }
+
+.add-button:hover {
+  background-color: black;
+  color: white; }
+
+.shirt-img-column {
+  width: 50%;
+  height: 100%;
+  float: left; }
+  .shirt-img-column img {
+    width: 90%;
+    height: 100%; }
+
 .site-nav {
   padding: 45px 40px;
   text-align: center; }

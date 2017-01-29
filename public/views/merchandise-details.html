@@ -1,6 +1,7 @@
 
 <div class='details-body'>
   <div class='prev-next'>
+    <p><span>PREVIOUS</span><span> / </span><span>NEXT</span></p>
   </div>
   <div class=details-gallery>
     <div class=details-column>
@@ -8,31 +9,43 @@
         <h1 class='shirt-title'>{{details[0].title}}</h1>
       </div>
 
-      <div class='details-price'>
-        <p class='price'>{{details[0].price}}</p>
-      </div>
+        <div class='details-price'>
+          <p class='price'>${{details[0].price}}</p>
+        </div>
 
-      <div class='details-desc'>
-        <p class='desc'>{{details[0].description}}</p>
-      </div>
+        <div class='details'>
+          <div class='details-desc'>
+            <p class='desc'>{{details[0].description}}</p>
+          </div>
+          <div class='sizes'>
+            <p>Available in XS - S - M - L - XL</p>
+          </div>
+        </div>
 
-      <div class='sizes'>
-        <p>Available in XS - S - M - L - XL</p>
-      </div>
+      <div class='selectors'>
+        <div class='details-select-size'>
+          <p class='size'>SIZE:</p>
+          <div class='select-size-wrapper' data-text='SELECT SIZE'>
+            <select class='select-size' >
+              <option class='opt' value=''>SELECT SIZE<option>
+              <option class='opt' value='XS'>XS<option>
+              <option class='opt' value='S'>S<option>
+              <option class='opt' value='M'>M<option>
+              <option class='opt' value='L'>L<option>
+              <option class='opt' value='XL'>XL<option>
+            </select>
+          </div>
+        </div>
 
-      <div class='details-select-size'>
-        <h2 class='size'>SIZE:</h2>
-        <div class='select-size'>
+        <div class='details-quantity-input'>
+          <p class='quantity'>QUANTITY:</p>
+          <input size="4" max="9999" min="1" value="1" type="number" step="1" class="quantity-input">
         </div>
       </div>
 
-      <div class='details-quantity'>
-        <h3 class='quantity'>QUANTITY:</h3>
-        <div class='quantity-box'>
-        </div>
-      </div>
 
-      <div class='add-to-cart'>
+      <div class='add-button-container'>
+        <a class="add-button">ADD TO CART</a>
       </div>
     </div>
     <div class='shirt-img-column'>

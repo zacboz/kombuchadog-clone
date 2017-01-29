@@ -1,0 +1,179 @@
+$cart: rgb(134, 134, 134);
+$lato: 'Lato', sans-serif;
+$tagline: rgb(128, 128, 128);
+$teko: 'Teko', sans-serif;
+$story: rgba(82,82,82,.6);
+$select: rgb(246, 246, 246);
+
+.details-body {
+  max-width: 1200px;
+  max-height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: auto;
+}
+
+.prev-next {
+  padding-left: 62px;
+  p {
+    font-family: $lato;
+    font-weight: 400;
+    font-size: 9px;
+    letter-spacing: .22em;
+    color: $tagline;
+  }
+}
+
+.details-gallery {
+  padding: 25px 0px 0px 12px;
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: auto;
+}
+
+.details-column {
+  width: 40%;
+  height: 100%;
+  float: left;
+  padding: 0 50px;
+}
+
+.details-title {
+  overflow: auto;
+  .shirt-title {
+    font-family: $teko;
+    font-weight: 500;
+    font-size: 32px;
+    letter-spacing: .11em;
+    line-height: 1em;
+    color: black;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+}
+
+.details-price {
+  overflow: auto;
+  .price {
+    font-family: $lato;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: .15em;
+    color: $story;
+    margin-bottom: 14px;
+    margin-top: 18px;
+  }
+}
+
+.details {
+  overflow: auto;
+  font-family: $lato;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: .1em;
+  color: $story;
+  p {
+    margin-bottom: 25px;
+  }
+}
+
+.selectors {
+  overflow: auto;
+  p {
+    font-family: $lato;
+    font-weight: 500;
+    font-size: 11px;
+    letter-spacing: .13em;
+    color: $tagline;
+    margin-bottom: 5px;
+  }
+}
+
+.select-size-wrapper {
+  background-color: $select;
+  height: 22px;
+  width: 152px;
+  font-size: 12px;
+  letter-spacing: .3em;
+  line-height: 1.9;
+  text-align: center;
+  padding: 8px 0;
+  margin-bottom: 25px;
+}
+
+.select-size-wrapper:after {
+  content: '\25BE';
+  color: $tagline;
+  font-size: 12px;
+  margin-left: 5px;
+  font-family: sans-serif !important;
+}
+
+.select-size {
+  border: none;
+  border-radius: 0;
+  -webkit-appearance: none;
+  font-family: $lato;
+  font-weight: 500;
+  font-size: 11px;
+  letter-spacing: .15em;
+  color: $tagline;
+}
+
+.opt {
+  background-color: red;
+  padding: 0 0;
+  margin: 0 0;
+  line-height: 10px;
+}
+
+.quantity-input {
+  background-color: $select;
+  height: 21px;
+  width: 40px;
+  padding: 8px 22px;
+  border: none;
+  border-radius: 0;
+  -webkit-appearance: none;
+  margin-bottom: 25px;
+  color: $tagline;
+  font-size: 12px;
+}
+
+
+.add-button-container {
+
+}
+
+.add-button {
+  border: solid;
+  border-color: black;
+  border-radius: 3px;
+  border-width: 2px;
+  font-family: $lato;
+  font-size: 10px;
+  letter-spacing: .2em;
+  text-align: center;
+  font-weight: 600;
+  height: auto;
+  width: auto;
+  padding: 26px 48px;
+}
+
+.add-button:hover {
+  background-color: black;
+  color: white;
+}
+
+.shirt-img-column {
+  width: 50%;
+  height: 100%;
+  float: left;
+  img {
+    width: 90%;
+    height: 100%;
+  }
+}
