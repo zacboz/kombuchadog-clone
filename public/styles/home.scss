@@ -132,6 +132,8 @@ $story: rgba(82,82,82,.6);
     background-image: url('/images/bottles-laydown-v4.jpg');
     background-position: center;
     background-size: 193%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
   }
   h3 {
     font-family: $lato;

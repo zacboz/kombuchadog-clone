@@ -294,7 +294,9 @@
     height: 1060px;
     background-image: url("/images/bottles-laydown-v4.jpg");
     background-position: center;
-    background-size: 193%; }
+    background-size: 193%;
+    background-repeat: no-repeat;
+    background-attachment: fixed; }
   .mission-image-wrapper h3 {
     font-family: "Lato", sans-serif;
     color: black;
@@ -607,8 +609,9 @@ body {
 .our-dogs-banner {
   background-image: url("/images/dog-banners-v2.jpg");
   background-repeat: no-repeat;
-  background-position: 38.5% 73%;
+  background-position: 36.5% 60%;
   background-size: 256%;
+  background-attachment: fixed;
   padding-top: 175px;
   padding-bottom: 175px;
   width: 100%;

@@ -14,27 +14,44 @@ CREATE TABLE merchandise (
   image TEXT
 );
 
-CREATE TABLE cart (
+-- CREATE TABLE cart (
+--   id SERIAL PRIMARY KEY,
+--   productId INT references merchandise,
+--   title TEXT,
+--   price VARCHAR(10),
+--   image TEXT,
+--   size VARCHAR(10),
+--   quantity INT
+-- );
+
+CREATE TABLE orders (
   id SERIAL PRIMARY KEY,
+  shipping TEXT,
+  mailing TEXT,
+  name TEXT,
+  day DATE
+);
+
+CREATE TABLE orderItem (
+  id SERIAL PRIMARY KEY,
+  orderId INT references orders,
   productId INT references merchandise,
-  item VARCHAR(30),
   title TEXT,
   price VARCHAR(10),
-  description TEXT,
   image TEXT,
   size VARCHAR(10),
   quantity INT
 );
 
+-- CREATE TABLE locations (
+--   id SERIAL PRIMARY KEY,
+--   store VARCHAR(30),
+--   address TEXT,
+--   phone VARCHAR(30),
+--   hours TEXT,
+--   website TEXT
+-- );
 
-CREATE TABLE locations (
-  id SERIAL PRIMARY KEY,
-  store VARCHAR(30),
-  address TEXT,
-  phone VARCHAR(30),
-  hours TEXT,
-  website TEXT
-);
 
 
 -- CREATE TABLE users (
