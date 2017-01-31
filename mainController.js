@@ -63,4 +63,17 @@ getMerchandiseDetails: (req, res) => {
   });
 },
 
+addToCart: (req, res) => {
+  var cart = req.body;
+  var values = [cart.id, cart.productId, cart.title, cart.price, cart.image, cart.size, cart.quantity];
+  db.add_toCart(values, (err, response) => {
+    if(err) {
+      console.log(err);
+    } else {
+      console.log('adding to cart', response);
+      res.status(200).json(response);
+    }
+  });
+}
+
 };

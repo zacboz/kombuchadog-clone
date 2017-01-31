@@ -28,6 +28,10 @@ app.get('/success-stories-index', mainController.getAdopted);
 app.get('/our-dogs/:name', mainController.getDogProfile);
 app.get('/merchandise-index', mainController.getMerchandise);
 app.get('/merchandise/:id', mainController.getMerchandiseDetails);
+app.post('/cart', mainController.addToCart);
+// app.get('/cart-index', mainController.getCart);
+// app.put('/cart-update-quantity/:id', mainController.updateQuantity);
+// app.delete('/remove-from-cart/:id', mainController.removeFromCart);
 
 
 

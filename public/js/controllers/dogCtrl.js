@@ -18,4 +18,5 @@ angular.module('kombuchadog').controller('dogCtrl', function($scope, mainSrvc, $
     //   }
     // });
 
+
 });

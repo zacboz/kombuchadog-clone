@@ -123,6 +123,10 @@ $select: rgb(246, 246, 246);
   color: $tagline;
 }
 
+.select-size:focus {
+  outline: none;
+}
+
 .opt {
   background-color: red;
   padding: 0 0;

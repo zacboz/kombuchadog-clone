@@ -138,6 +138,9 @@
   letter-spacing: .15em;
   color: gray; }
 
+.select-size:focus {
+  outline: none; }
+
 .opt {
   background-color: red;
   padding: 0 0;
@@ -606,7 +609,6 @@ body {
   background-repeat: no-repeat;
   background-position: 38.5% 73%;
   background-size: 256%;
-  background-attachment: fixed;
   padding-top: 175px;
   padding-bottom: 175px;
   width: 100%;

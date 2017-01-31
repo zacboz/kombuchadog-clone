@@ -16,8 +16,9 @@ CREATE TABLE merchandise (
 
 CREATE TABLE cart (
   id SERIAL PRIMARY KEY,
-  productId INT references merchandise,
+  productId INT reference from merchandise,
   item VARCHAR(30),
+  title TEXT,
   price VARCHAR(10),
   description TEXT,
   image TEXT,
