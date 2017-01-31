@@ -3,7 +3,8 @@ angular.module('kombuchadog', ['ui.router'])
       $stateProvider
             .state('home',{
               url:'/',
-              templateUrl: './views/home.html'
+              templateUrl: './views/home.html',
+              controller: 'homeCtrl'
             })
             .state('about',{
                 url:'/about',

@@ -12,11 +12,15 @@ $teko: 'Teko', sans-serif;
   overflow: auto;
 }
 
+.banner-container {
+}
+
 .our-dogs-banner {
   background-image: url('/images/dog-banners-v2.jpg');
   background-repeat: no-repeat;
-  background-position: 34.5% 65%;
-  background-size: 315%;
+  background-position: 38.5% 73%;
+  background-size: 256%;
+  background-attachment: fixed;
   padding-top: 175px;
   padding-bottom: 175px;
   width: 100%;

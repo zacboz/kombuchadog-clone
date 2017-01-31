@@ -3,6 +3,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const massive = require('massive');
 const session = require('express-session');
+// const parallax = require('ng-parallax');
 const port = 3023;
 
 const app = module.exports = express();

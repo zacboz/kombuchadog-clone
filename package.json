@@ -29,5 +29,8 @@
     "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.4.0",
     "massive": "^2.5.0"
+  },
+  "devDependencies": {
+    "ng-parallax": "^1.1.3"
   }
 }
