@@ -6,16 +6,16 @@
   <div class=details-gallery>
     <div class=details-column>
       <div class='details-title'>
-        <h1 class='shirt-title'>{{details[0].title}}</h1>
+        <h1 class='shirt-title'>{{details.title}}</h1>
       </div>
 
         <div class='details-price'>
-          <p class='price'>${{details[0].price}}</p>
+          <p class='price'>${{details.price}}</p>
         </div>
 
         <div class='details'>
           <div class='details-desc'>
-            <p class='desc'>{{details[0].description}}</p>
+            <p class='desc'>{{details.description}}</p>
           </div>
           <div class='sizes'>
             <p>Available in XS - S - M - L - XL</p>
@@ -26,7 +26,7 @@
         <div class='details-select-size'>
           <p class='size'>SIZE:</p>
           <div class='select-size-wrapper' data-text='SELECT SIZE'>
-            <select class='select-size' >
+            <select class='select-size' ng-model='productSize'>
               <option class='opt' value=''>Select Size</option>
               <option class='opt' value='XS'>XS</option>
               <option class='opt' value='S'>S</option>
@@ -39,17 +39,17 @@
 
         <div class='details-quantity-input'>
           <p class='quantity'>QUANTITY:</p>
-          <input size="4" max="9999" min="1" value="1" type="number" step="1" class="quantity-input">
+          <input ng-model='productQuantity' size="4" max="9999" min="1" type="number" step="1" class="quantity-input">
         </div>
       </div>
 
 
       <div class='add-button-container'>
-        <a class="add-button">ADD TO CART</a>
+        <a class="add-button" ng-click='addToCart(productSize, productQuantity)'>ADD TO CART</a>
       </div>
     </div>
     <div class='shirt-img-column'>
-      <img class='shirt-img' src='{{details[0].image}}' alt='product image'>
+      <img class='shirt-img' src='{{details.image}}' alt='product image'>
     </div>
   </div>
 </div>

@@ -3,6 +3,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const massive = require('massive');
 const session = require('express-session');
+const config = require('./config')
 const port = 3023;
 
 const app = module.exports = express();
@@ -10,7 +11,7 @@ app.use(bodyParser.json());
 app.use(express.static(__dirname + '/public'));
 // console.log(__dirname);
 app.use(session({
-  secret: 'keyboard cat',
+  secret: config.sessionSecret,
   resave: false,
   saveUninitialized: false
 }));
@@ -28,9 +29,9 @@ app.get('/our-dogs/:name', mainController.getDogProfile);
 app.get('/merchandise-index', mainController.getMerchandise);
 app.get('/merchandise/:id', mainController.getMerchandiseDetails);
 app.post('/cart', mainController.addToCart);
-// app.get('/cart-index', mainController.getCart);
+app.get('/cart', mainController.getCart);
 // app.put('/cart-update-quantity/:id', mainController.updateQuantity);
-// app.delete('/remove-from-cart/:id', mainController.removeFromCart);
+app.delete('/remove-from-cart/:id', mainController.removeFromCart);
 
 
 

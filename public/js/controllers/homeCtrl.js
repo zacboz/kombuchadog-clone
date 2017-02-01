@@ -15,4 +15,22 @@ angular.module('kombuchadog')
 
   $(window).bind('scroll', update);
 
+  var i = 0;
+  var myVar = setInterval(changeImage, 2000);
+
+  function changeImage(){
+    //array of backgrounds
+    var bottles = ["ginger.jpg", "hint-of-mint.jpg", "just-kombucha.jpg", "raspberry.jpg", "wild-blue-ginger.jpg", "wild-blueberry.jpg"];
+    $('.right-column-image').css('background-image', 'url("images/kombuchaflavors/'+bottles[i]+'")');
+
+    if(i == bottles.length -1){
+        i = 0;
+    }
+    else{
+        i++;
+    }
+  }
+
+ // window.setInterval("changeImage()", 5000);
+
 });

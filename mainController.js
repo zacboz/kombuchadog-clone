@@ -9,7 +9,7 @@ getUpForAdoption: (req, res) => {
       console.log(err);
       res.status(200).json(err);
     } else {
-      console.log('getting our dogs', response)
+      // console.log('getting our dogs', response)
       res.status(200).json(response);
     }
   });
@@ -21,7 +21,7 @@ getAdopted: (req, res) => {
       console.log(err);
       res.status(200).json(err);
     } else {
-      console.log('getting success stories', response)
+      // console.log('getting success stories', response)
       res.status(200).json(response);
     }
   });
@@ -33,7 +33,7 @@ getDogProfile: (req, res) => {
       console.log(err);
       res.status(200).json(err);
     } else {
-      console.log('getting dog by name', response)
+      // console.log('getting dog by name', response)
       res.status(200).json(response);
     }
   });
@@ -45,7 +45,7 @@ getMerchandise: (req, res) => {
       console.log(err);
       res.status(200).json(err);
     } else {
-      console.log('getting merchandise', response)
+      // console.log('getting merchandise', response)
       res.status(200).json(response);
     }
   });
@@ -57,26 +57,30 @@ getMerchandiseDetails: (req, res) => {
       console.log(err);
       res.status(200).json(err);
     } else {
-      console.log('getting merchandise details', response)
+      // console.log('getting merchandise details', response)
       res.status(200).json(response);
     }
   });
 },
 
 addToCart: (req, res) => {
-  if (req.session.cart) {
+  if (!req.session.cart) {
     req.session.cart = [];
   }
-  db.read_merchandiseDetails(req.params.id), (err, response) => {
-    req.session.cart.push(response);
-    console.log('adding to cart', $req.session.cart)
+    req.session.cart.push(req.body);
+    console.log('adding to cart', req.session.cart)
     res.json(req.session.cart)
-  }
+},
+
+getCart: (req, res) => {
+  console.log('getting cart', req.session.cart);
+  res.json(req.session.cart);
 },
 
 removeFromCart: (req, res) => {
-
-}
+  req.session.cart.splice(req.params.id, 1);
+  res.json(req.session.cart);
+},
 
 
 };
