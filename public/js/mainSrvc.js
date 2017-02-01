@@ -62,16 +62,27 @@ angular.module('kombuchadog').service('mainSrvc', function($http) {
       url: '/cart',
       data: item
     }).success(() => {
-      console.log('SRVC item added')
+      // console.log('SRVC item added')
     });
   };
 
   this.getCart = () => {
     return $http({
       method: 'GET',
-      url: '/cart',
+      url: '/cart'
     }).then((response) => {
       console.log('SRVC CART', response)
+      return response;
+    });
+  };
+
+  this.removeFromCart = (item) => {
+    let id = item.productId
+    return $http({
+      method: 'DELETE',
+      url: '/cart/'+id
+    }).then((response) => {
+      console.log('SRVE REMOVE FROM CART', response);
       return response;
     })
   }

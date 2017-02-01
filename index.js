@@ -30,8 +30,8 @@ app.get('/merchandise-index', mainController.getMerchandise);
 app.get('/merchandise/:id', mainController.getMerchandiseDetails);
 app.post('/cart', mainController.addToCart);
 app.get('/cart', mainController.getCart);
-// app.put('/cart-update-quantity/:id', mainController.updateQuantity);
-app.delete('/remove-from-cart/:id', mainController.removeFromCart);
+app.put('/cart/:id', mainController.updateQuantity);
+app.delete('/cart/:id', mainController.removeFromCart);
 
 
 

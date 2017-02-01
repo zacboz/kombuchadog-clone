@@ -3,7 +3,7 @@
     <h1>SHOPPING CART</h1>
   </div>
   <div class='cart-headers'>
-    <p>Item <span class='header-quantity'>Quantity</span> <span class='header-price'>Price</span></p>
+    <p>Item<span class='header-quantity'>Quantity</span><span class='header-price'>Price</span></p>
   </div>
   <hr class='top-line'>
   <div class='cart-row' ng-repeat='item in cart'>
@@ -16,18 +16,18 @@
     </div>
     <div>
     <form class='cart-quantity'>
-      <input size='1'>
+      <input size='1' value='{{item.productQuantity}}'>
       <!-- <input type="number" name="quantity" min="1" max="100"> -->
     </form>
   </div>
     <div class='cart-item-price'>
       <p>${{item.productPrice}}</p>
     </div>
-    <div class='cart-remove-btn'>x</div>
+    <div class='cart-remove-btn' ng-click='removeFromCart(item)'>x</div>
     <hr>
   </div>
   <div class='subtotal'>
-    <p>Subtotal</p>
+    <p>Subtotal <span class='subtotal-span'>{{subtotal | currency}}</span></p>
   </div>
   <hr align='right' width='50%'>
   <div class='checkout-btn-wrapper'>

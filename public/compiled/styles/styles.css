@@ -47,11 +47,12 @@
 .shopping-header h1 {
   font-family: "Teko", sans-serif;
   font-weight: 500;
-  font-size: 30px;
-  letter-spacing: .11em;
+  font-size: 27px;
+  letter-spacing: .1em;
   line-height: 1em;
   color: black;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin-bottom: 40px; }
 
 .cart-headers p {
   font-family: "Lato", sans-serif;
@@ -107,9 +108,14 @@
     border-color: #cccccc;
     border-radius: 4px;
     height: 27px;
-    width: 32px;
+    width: 28px;
     color: gray;
-    margin: 50px 110px 35px 380px; }
+    margin: 50px 110px 35px 380px;
+    font-size: 15px;
+    text-align: right;
+    padding-right: 7px; }
+  .cart-quantity input:focus {
+    outline: none; }
 
 .cart-item-price {
   float: left;
@@ -139,10 +145,14 @@ hr {
   float: right;
   font-family: "Lato", sans-serif;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 15px;
   letter-spacing: .12em;
   color: gray;
   margin: 12px 0; }
+
+.subtotal-span {
+  padding-left: 20px;
+  padding-right: 20px; }
 
 .checkout-btn-wrapper {
   float: right;
@@ -272,12 +282,6 @@ hr {
 .select-size:focus {
   outline: none; }
 
-.opt {
-  background-color: red;
-  padding: 0 0;
-  margin: 0 0;
-  line-height: 10px; }
-
 .quantity-input {
   background-color: #f6f6f6;
   height: 21px;
@@ -289,6 +293,9 @@ hr {
   margin-bottom: 25px;
   color: gray;
   font-size: 12px; }
+
+.quantity-input:focus {
+  outline: none; }
 
 .add-button {
   border: solid;

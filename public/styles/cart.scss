@@ -20,11 +20,12 @@ $quantity: rgb(204, 204, 204);
   h1 {
     font-family: $teko;
     font-weight: 500;
-    font-size: 30px;
-    letter-spacing: .11em;
+    font-size: 27px;
+    letter-spacing: .1em;
     line-height: 1em;
     color: black;
     text-transform: uppercase;
+    margin-bottom: 40px;
   }
 }
 
@@ -97,9 +98,15 @@ $quantity: rgb(204, 204, 204);
     border-color: $quantity;
     border-radius: 4px;
     height: 27px;
-    width: 32px;
+    width: 28px;
     color: $tagline;
     margin: 50px 110px 35px 380px;
+    font-size: 15px;
+    text-align: right;
+    padding-right: 7px;
+  }
+  input:focus {
+    outline: none;
   }
 }
 
@@ -135,10 +142,15 @@ hr {
   float: right;
   font-family: $lato;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 15px;
   letter-spacing: .12em;
   color: $tagline;
   margin: 12px 0;
+}
+
+.subtotal-span {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 

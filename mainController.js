@@ -68,7 +68,7 @@ addToCart: (req, res) => {
     req.session.cart = [];
   }
     req.session.cart.push(req.body);
-    console.log('adding to cart', req.session.cart)
+    // console.log('adding to cart', req.session.cart)
     res.json(req.session.cart)
 },
 
@@ -78,9 +78,19 @@ getCart: (req, res) => {
 },
 
 removeFromCart: (req, res) => {
-  req.session.cart.splice(req.params.id, 1);
+  // console.log(req.params.id)
+  console.log('trying to remove', req.session.cart);
+  for (var i = 0; i < req.session.cart.length; i++) {
+    if (req.session.cart[i].productId == req.params.id) {
+      req.session.cart.splice(i, 1);
+    }
+  }
   res.json(req.session.cart);
 },
+
+updateQuantity: (req, res) => {
+
+}
 
 
 };
