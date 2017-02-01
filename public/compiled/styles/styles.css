@@ -36,6 +36,137 @@
     color: rgba(82, 82, 82, 0.6);
     text-decoration: underline; }
 
+.cart-wrapper {
+  max-width: 1200px;
+  max-height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: auto;
+  padding: 20px 65px; }
+
+.shopping-header h1 {
+  font-family: "Teko", sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  letter-spacing: .11em;
+  line-height: 1em;
+  color: black;
+  text-transform: uppercase; }
+
+.cart-headers p {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-size: 10px;
+  letter-spacing: .12em;
+  color: #7d7d7d; }
+
+.cart-headers .header-quantity {
+  margin-left: 732px; }
+
+.cart-headers .header-price {
+  margin-left: 125px; }
+
+.top-line {
+  margin-top: 17px;
+  margin-bottom: 0px;
+  font-weight: 400; }
+
+.cart-row {
+  width: 100%;
+  overflow: auto;
+  height: 137px; }
+
+.cart-img-wrapper img {
+  width: 10%;
+  height: 80%;
+  float: left;
+  padding-top: 13px;
+  padding-bottom: 13px; }
+
+.cart-item-text {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  letter-spacing: .12em;
+  color: gray;
+  float: left;
+  margin-top: 50px;
+  margin-left: 20px;
+  overflow: auto;
+  height: 70px;
+  width: 260px; }
+  .cart-item-text p {
+    margin: 2px 2px; }
+
+.cart-quantity {
+  float: left;
+  overflow: auto; }
+  .cart-quantity input {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #cccccc;
+    border-radius: 4px;
+    height: 27px;
+    width: 32px;
+    color: gray;
+    margin: 50px 110px 35px 380px; }
+
+.cart-item-price {
+  float: left;
+  margin: 44px 50px 0px 0px;
+  overflow: auto; }
+  .cart-item-price p {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: .1em;
+    color: gray; }
+
+.cart-remove-btn {
+  float: left;
+  margin: 56px 0px 0px 20px;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: .15em;
+  color: #cccccc;
+  cursor: pointer; }
+
+hr {
+  clear: both; }
+
+.subtotal {
+  float: right;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: .12em;
+  color: gray;
+  margin: 12px 0; }
+
+.checkout-btn-wrapper {
+  float: right;
+  margin-top: 12px;
+  overflow: auto; }
+
+.checkout-button {
+  border: solid;
+  border-color: black;
+  border-radius: 3px;
+  border-width: 2px;
+  font-family: "Lato", sans-serif;
+  font-size: 11px;
+  letter-spacing: .2em;
+  text-align: center;
+  font-weight: 400;
+  height: auto;
+  width: auto;
+  padding: 12px 32px; }
+
+.checkout-button:hover {
+  background-color: black;
+  color: white; }
+
 .details-body {
   max-width: 1200px;
   max-height: 100%;

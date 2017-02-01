@@ -48,6 +48,11 @@ angular.module('kombuchadog', ['ui.router'])
                 url:'/cart',
                 templateUrl: './views/cart.html',
                 controller: 'cartCtrl'
+            })
+            .state('checkout',{
+                url:'/checkout',
+                templateUrl: './views/checkout.html',
+                controller: 'checkoutCtrl'
             });
 
             $urlRouterProvider
