@@ -24,7 +24,7 @@ angular.module('kombuchadog').service('mainSrvc', function($http) {
       url: '/our-dogs/'+name
     }).then((response) => {
       return response;
-      console.log('SERVICE', response);
+      // console.log('SERVICE', response);
     });
   };
 
@@ -49,7 +49,7 @@ angular.module('kombuchadog').service('mainSrvc', function($http) {
   };
 
   this.addToCart = (productTitle, productImage, productSize, productQuantity, productPrice, productId) => {
-    const item = {
+    let item = {
       productTitle: productTitle,
       productImage: productImage,
       productSize: productSize,
@@ -71,7 +71,7 @@ angular.module('kombuchadog').service('mainSrvc', function($http) {
       method: 'GET',
       url: '/cart'
     }).then((response) => {
-      console.log('SRVC CART', response)
+      // console.log('SRVC CART', response)
       return response;
     });
   };
@@ -84,10 +84,34 @@ angular.module('kombuchadog').service('mainSrvc', function($http) {
     }).then((response) => {
       console.log('SRVE REMOVE FROM CART', response);
       return response;
+    });
+  };
+
+  this.updateQuantity = (productId, productQuantity) => {
+    let product = {
+      productId: productId,
+      productQuantity: productQuantity
+    }
+    console.log('SRVC product', product);
+    return $http({
+      method: 'PUT',
+      url: '/cart/'+productId,
+      data: product
+    }).success((response) => {
+      console.log('SRVC UPDATING', response);
     })
-  }
+  };
 
-
+  this.postOrder = (token) => {
+    return $http({
+      method: 'POST',
+      url: '/order',
+      data: token
+    }).success((response) => {
+      console.log('SRVC token', response);
+      return response;
+    });
+  };
 
 
 

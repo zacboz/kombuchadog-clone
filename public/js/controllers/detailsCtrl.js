@@ -1,9 +1,19 @@
 angular.module('kombuchadog')
-.controller('detailsCtrl', function($scope, mainSrvc, $stateParams){
+.controller('detailsCtrl', function($scope, mainSrvc, $stateParams, $location){
 
   mainSrvc.getMerchandiseDetails($stateParams.id).then((response) => {
     $scope.details = response.data[0];
-    // console.log('detailsCtrl', $scope.details);
+    console.log('detailsCtrl', $scope.details.id);
+    if ($scope.details.id < 2) {
+      $scope.previous = null;
+      $scope.next = true;
+    } else if ($scope.details.id > 3) {
+      $scope.next = null;
+      $scope.previous = true;
+    } else {
+      $scope.previous = true;
+      $scope.next = true;
+    }
   });
 
   $scope.productQuantity = 1;
@@ -15,6 +25,19 @@ angular.module('kombuchadog')
 
     mainSrvc.addToCart(productTitle, productImage, productSize, productQuantity, productPrice, productId);
       alert('product added to cart');
+  };
+
+  $scope.changeProduct = (direction) => {
+    let index = $scope.details.id + Number(direction);
+    if (index < 1) {
+      $location.path('/merchandise-details/1');
+    }
+    else if (index > 4){
+      $location.path('/merchandise-details/4');
+    }
+    else {
+      $location.path(`/merchandise-details/${index}`);
+    }
   };
 
 });

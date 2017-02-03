@@ -6,7 +6,7 @@
     <p>Item<span class='header-quantity'>Quantity</span><span class='header-price'>Price</span></p>
   </div>
   <hr class='top-line'>
-  <div class='cart-row' ng-repeat='item in cart'>
+  <div class='cart-row' ng-repeat='item in cart track by $index'>
     <div class='cart-img-wrapper'>
       <img ng-src={{item.productImage}} alt="product image">
     </div>
@@ -16,8 +16,7 @@
     </div>
     <div>
     <form class='cart-quantity'>
-      <input size='1' value='{{item.productQuantity}}'>
-      <!-- <input type="number" name="quantity" min="1" max="100"> -->
+      <input ng-model='item.productQuantity' ng-change='updateQuantity(item)'>
     </form>
   </div>
     <div class='cart-item-price'>
@@ -30,7 +29,8 @@
     <p>Subtotal <span class='subtotal-span'>{{subtotal | currency}}</span></p>
   </div>
   <hr align='right' width='50%'>
-  <div class='checkout-btn-wrapper'>
+  <!-- <div class='checkout-btn-wrapper'>
     <a class="checkout-button" >CHECKOUT</a>
-  </div>
+  </div> -->
+  <checkout></checkout>
 </section>

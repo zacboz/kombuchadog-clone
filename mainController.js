@@ -1,4 +1,5 @@
 const app = require('./index');
+const stripe = require("stripe")("sk_test_BQokikJOvBiI2HlWgH4olfQ2");
 const db = app.get('db');
 
 module.exports = {
@@ -80,7 +81,7 @@ getCart: (req, res) => {
 removeFromCart: (req, res) => {
   // console.log(req.params.id)
   console.log('trying to remove', req.session.cart);
-  for (var i = 0; i < req.session.cart.length; i++) {
+  for (let i = 0; i < req.session.cart.length; i++) {
     if (req.session.cart[i].productId == req.params.id) {
       req.session.cart.splice(i, 1);
     }
@@ -89,8 +90,46 @@ removeFromCart: (req, res) => {
 },
 
 updateQuantity: (req, res) => {
+  // console.log('trying to update', req.body);
+  for (let i = 0; i < req.session.cart.length; i++) {
+    if (req.session.cart[i].productId == req.params.productId) {
+      // console.log('original quantity', req.session.cart[i].productQuantity);
+      req.session.cart[i].productQuantity = req.body.productQuantity;
+      console.log('new quantity', req.session.cart[i].productQuantity);
+      res.json(req.session.cart);
+    }
+  }
+},
 
-}
+postOrder: (req, res) => {
+  var token = req.body.stripeToken; // Using Express
+// Charge the user's card:
+  var charge = stripe.charges.create({
+    amount: 1000,
+    currency: "usd",
+    description: "Example charge",
+    source: token,
+  }, (err, charge) => {
+    // asynchronously called
+    // console.log('CHARGE', charge);
+    // var order = (charge);
+    // var orderId = req.params.id;
+    // var values = [orderId, order.shippingAddress, order.billingAddress, order.amount];
+    // db.create_order(values, (err, response) => {
+    //   console.log('creating order');
+    //   if (err) {
+    //     console.log(err);
+    //     res.status(200).json(err);
+    //   }
+    //   db.create_orderitems([response[0].id, req.body.productId, req.body.size, req.body.quantity], (err, response) => {
+    //     console.log('creating order item');
+    //     res.status(200).json(response);
+    //   });
+    // });
+});
+},
+
+
 
 
 };

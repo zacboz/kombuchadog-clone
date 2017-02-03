@@ -4,6 +4,8 @@ const cors = require('cors');
 const massive = require('massive');
 const session = require('express-session');
 const config = require('./config')
+const stripe = require("stripe")("sk_test_BQokikJOvBiI2HlWgH4olfQ2");
+
 const port = 3023;
 
 const app = module.exports = express();
@@ -30,8 +32,10 @@ app.get('/merchandise-index', mainController.getMerchandise);
 app.get('/merchandise/:id', mainController.getMerchandiseDetails);
 app.post('/cart', mainController.addToCart);
 app.get('/cart', mainController.getCart);
-app.put('/cart/:id', mainController.updateQuantity);
+app.put('/cart/:productId', mainController.updateQuantity);
 app.delete('/cart/:id', mainController.removeFromCart);
+app.post('/order', mainController.postOrder);
+// app.get('/order-index', mainController.getOrderConfirmation);
 
 
 
