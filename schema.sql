@@ -20,8 +20,6 @@ CREATE TABLE orders (
   customerName VARCHAR(40),
   email TEXT,
   shippingAddress TEXT,
-  billingAddress TEXT,
-  purchaseDate DATE,
   amount INT
 );
 

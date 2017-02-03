@@ -7,7 +7,7 @@ angular.module('kombuchadog').directive('checkout', (mainSrvc) => {
     },
     link: function(scope, element, attrs) {
       var handler = StripeCheckout.configure({
-        key: 'pk_test_6pRNASCoBOKtIshFeQd4XMUh',
+        key: 'pk_test_6065FRM1a4tbwIiofznTSYu4',
         image: 'https://stripe.com/img/documentation/checkout/marketplace.png',
         locale: 'auto',
         token: function(token) {
@@ -26,7 +26,7 @@ angular.module('kombuchadog').directive('checkout', (mainSrvc) => {
           shippingAddress: true,
           billingAddress: true,
           zipCode: true,
-          amount: scope.amount * 100
+          amount: scope.amount
         });
         e.preventDefault();
       });

@@ -1,5 +1,5 @@
 const app = require('./index');
-const stripe = require("stripe")("sk_test_BQokikJOvBiI2HlWgH4olfQ2");
+var stripe = require("stripe")("sk_test_YWeRVnmViJfikag0T9Z4QH6m");
 const db = app.get('db');
 
 module.exports = {
@@ -102,31 +102,46 @@ updateQuantity: (req, res) => {
 },
 
 postOrder: (req, res) => {
-  var token = req.body.stripeToken; // Using Express
+  console.log('BODY', req.body);
+  var token = req.body.token.id; // Using Express
 // Charge the user's card:
-  var charge = stripe.charges.create({
-    amount: 1000,
+stripe.customers.create({
+  email: req.body.token.email,
+  source: token,
+}).then(function(customer) {
+  return stripe.charges.create({
+    amount: req.body.total,
     currency: "usd",
     description: "Example charge",
-    source: token,
-  }, (err, charge) => {
-    // asynchronously called
-    console.log('CHARGE', charge);
-    var order = (charge);
-    // var orderId = req.params.id;
-    // var values = [orderId, order.shippingAddress, order.billingAddress, order.amount];
-    // db.create_order(values, (err, response) => {
-    //   console.log('creating order');
-    //   if (err) {
-    //     console.log(err);
-    //     res.status(200).json(err);
-    //   }
-    //   db.create_orderitems([response[0].id, req.body.productId, req.body.size, req.body.quantity], (err, response) => {
-    //     console.log('creating order item');
-    //     res.status(200).json(response);
-    //   });
-    // });
-});
+    customer: customer.id,
+  })
+}).then(function(charge){
+//     // asynchronously called
+    // console.log('CHARGE', charge);
+    var order = req.body.token;
+    var backcart = req.body.cart;
+    var address = order.card.address_line1 + ' ' + order.card.address_city + ' ' + order.card.address_zip;
+    // console.log('ADDRESS!!!', address);
+    var values = [order.card.name, address, order.email, req.body.total];
+    db.create_order(values, (err, response) => {
+      // console.log('creating order');
+      if (err) {
+        console.log('ORDER ERROR!!!!!!!', err);
+      } else {
+        console.log('ORDER', response);
+       for (let i = 0; i < backcart.length; i++) {
+         console.log(backcart[i].productId, backcart[i].productSize, backcart[i].productQuantity);
+         db.create_orderitems(response[0].id, backcart[i].productId, backcart[i].productSize, backcart[i].productQuantity, (err, response) => {
+           if (err) {
+             console.log('ORDERITEMS ERROR!!!!!!!', err);
+           }
+         });
+       }
+       console.log('ORDERITEMS', response);
+       res.status(200).json(response);
+      }
+      });
+    });
 },
 
 

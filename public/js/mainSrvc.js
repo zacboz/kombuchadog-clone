@@ -102,11 +102,12 @@ angular.module('kombuchadog').service('mainSrvc', function($http) {
     })
   };
 
-  this.postOrder = (token) => {
+  this.postOrder = (token, total, cart) => {
+    console.log('SRVC TOKEN', token);
     return $http({
       method: 'POST',
       url: '/order',
-      data: token
+      data: {token, total, cart}
     }).success((response) => {
       console.log('SRVC token', response);
       return response;
