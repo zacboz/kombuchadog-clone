@@ -1,5 +1,7 @@
 angular.module('kombuchadog')
-.controller('homeCtrl', function($scope, mainSrvc, $stateParams){
+.controller('homeCtrl', function($scope, mainSrvc, $stateParams, $rootScope){
+
+
 
   var velocity = 0.4;
 

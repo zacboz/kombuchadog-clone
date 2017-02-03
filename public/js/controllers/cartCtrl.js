@@ -1,5 +1,5 @@
 angular.module('kombuchadog')
-.controller('cartCtrl', function($scope, mainSrvc, $stateParams){
+.controller('cartCtrl', function($scope, mainSrvc, $stateParams, $rootScope){
 
   $scope.subtotal = 0;
   $scope.cart;
@@ -16,6 +16,15 @@ angular.module('kombuchadog')
       });
     };
   };
+
+  let findTotalItems = () => {
+    $scope.totalItems = 0;
+    for (let i = 0; i < $scope.cart.length; i++) {
+      $scope.totalItems += Number($scope.cart[i].productQuantity);
+    }
+    console.log($scope.totalItems);
+    return $scope.totalItems;
+  }
 
   mainSrvc.getCart().then((response) => {
     $scope.cart = response.data;
@@ -39,6 +48,8 @@ $scope.removeFromCart = (item) => {
 };
 
 $scope.updateQuantity = (item) => {
+  $rootScope.cartTotal = findTotalItems()
+
   console.log(item)
   // console.log($scope.cart);
   // console.log($scope.cart[0].productId);

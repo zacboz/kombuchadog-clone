@@ -1,5 +1,5 @@
 angular.module('kombuchadog')
-.controller('detailsCtrl', function($scope, mainSrvc, $stateParams, $location){
+.controller('detailsCtrl', function($scope, mainSrvc, $stateParams, $location, $rootScope){
 
   mainSrvc.getMerchandiseDetails($stateParams.id).then((response) => {
     $scope.details = response.data[0];
@@ -21,6 +21,7 @@ angular.module('kombuchadog')
 
   $scope.productQuantity = 1;
   $scope.addToCart = (productSize, productQuantity) => {
+    $rootScope.cartTotal += Number(productQuantity);
     const productTitle = $scope.details.title;
     const productPrice = $scope.details.price;
     const productImage = $scope.details.image;
