@@ -7,12 +7,15 @@ angular.module('kombuchadog')
     if ($scope.details.id < 2) {
       $scope.previous = null;
       $scope.next = true;
+      $scope.slash = null;
     } else if ($scope.details.id > 3) {
       $scope.next = null;
       $scope.previous = true;
+      $scope.slash = null;
     } else {
       $scope.previous = true;
       $scope.next = true;
+      $scope.slash = true;
     }
   });
 

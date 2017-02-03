@@ -111,8 +111,8 @@ postOrder: (req, res) => {
     source: token,
   }, (err, charge) => {
     // asynchronously called
-    // console.log('CHARGE', charge);
-    // var order = (charge);
+    console.log('CHARGE', charge);
+    var order = (charge);
     // var orderId = req.params.id;
     // var values = [orderId, order.shippingAddress, order.billingAddress, order.amount];
     // db.create_order(values, (err, response) => {
