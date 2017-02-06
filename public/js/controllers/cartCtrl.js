@@ -36,13 +36,13 @@ angular.module('kombuchadog')
 
 $scope.removeFromCart = (item) => {
   $rootScope.cartTotal = findTotalItems();
-
   console.log('remove CTRL', item)
   mainSrvc.removeFromCart(item).then(() => {
     mainSrvc.getCart().then((response) => {
       $scope.cart = response.data;
       $scope.subtotal = 0;
       cartTotal();
+      $rootScope.cartTotal = findTotalItems();
     }).catch((err) => {
       console.log(err);
     });

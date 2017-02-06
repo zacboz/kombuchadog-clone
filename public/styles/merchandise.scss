@@ -46,3 +46,28 @@ $tagline: rgb(128, 128, 128);
   font-weight: 600;
   text-transform: uppercase;
 }
+
+@media (max-width: 426px){
+  .merchandise-gallery {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: auto;
+    padding: 55px 0 0 20px;
+  }
+  .merchandise-container {
+    width: 94%;
+    float: left;
+    position: relative;
+  }
+}
+@media (max-width: 376px){
+  .merchandise-gallery {
+    padding: 55px 0 0 17px;
+  }
+}
+@media (max-width: 376px){
+  .merchandise-gallery {
+    padding: 55px 0 0 14px;
+  }
+}

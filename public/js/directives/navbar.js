@@ -8,7 +8,7 @@ angular.module('kombuchadog').directive('navbar', () => {
 
       $('.activate-mobile-menu').on('click', function() {
       	if (isActive) {
-          $('body').addClass('mobile-open');
+          $('body').removeClass('mobile-open');
           $('body').removeClass('routes-open');
           $('body').removeClass('social-open');
           $('body').removeClass('hidden-nav');
@@ -16,7 +16,7 @@ angular.module('kombuchadog').directive('navbar', () => {
           // $('body').addClass('menu-close');
           $('body').addClass('hidden-social');
       	} else {
-      		$('body').removeClass('mobile-open');
+      		$('body').addClass('mobile-open');
           $('body').addClass('routes-open');
           $('body').addClass('social-right');
           $('body').addClass('hidden-nav');
@@ -28,7 +28,7 @@ angular.module('kombuchadog').directive('navbar', () => {
 
       $('.social-menu').on('click', function() {
       	if (isActive) {
-          // $('body').removeClass('mobile-open');
+          $('body').addClass('mobile-open');
           $('body').addClass('routes-open');
           $('body').addClass('hidden-nav');
           $('body').removeClass('hidden-social');
@@ -43,7 +43,7 @@ angular.module('kombuchadog').directive('navbar', () => {
 
       $('.back').on('click', function() {
       	if (isActive) {
-          // $('body').removeClass('mobile-open');
+          $('body').addClass('mobile-open');
           $('body').addClass('social-open');
           $('body').removeClass('hidden-social');
           $('body').addClass('hidden-nav');
@@ -59,17 +59,17 @@ angular.module('kombuchadog').directive('navbar', () => {
       	if (isActive) {
           $('body').addClass('routes-open');
           $('body').addClass('social-open');
-          $('body').removeClass('mobile-open');
-          $('body').removeClass('menu-close');
+          $('body').addClass('mobile-open');
+          // $('body').removeClass('menu-close');
           $('body').addClass('hidden-nav');
       	} else {
-          // $('body').addClass('hidden-social');
+          $('body').addClass('hidden-social');
           $('body').removeClass('routes-open');
           $('body').removeClass('social-open');
           $('body').removeClass('social-right');
           $('body').removeClass('hidden-nav');
-          // $('body').addClass('mobile-open');
-          $('body').addClass('menu-close');
+          $('body').removeClass('mobile-open');
+          // $('body').addClass('menu-close');
       	}
       	isActive = !isActive;
       });
