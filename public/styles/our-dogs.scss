@@ -246,7 +246,7 @@ $teko: 'Teko', sans-serif;
   img{
     display: block;
     height: 95%;
-    width: 95%;
+    width: 96%;
     padding-bottom: 20px;
   }
 }
@@ -256,7 +256,7 @@ $teko: 'Teko', sans-serif;
   img{
     display: block;
     height: 95%;
-    width: 95%;
+    width: 96%;
     padding-bottom: 20px;
   }
 }
@@ -277,4 +277,266 @@ $teko: 'Teko', sans-serif;
   letter-spacing: .3em;
   font-weight: 600;
   text-transform: uppercase;
+}
+
+
+@media (max-width: 1025px){
+  .our-dogs-banner {
+    background-position: 36.5% 60%;
+    background-size: 272%;
+    height: 582px;
+  }
+}
+
+@media (max-width: 769px){
+  .our-dogs-banner {
+    background-position: 36.5% 60%;
+    background-size: 350%;
+    height: 472px;
+    padding-bottom: 0px;
+  }
+
+  .dog-grid-container:nth-child(3) {
+    max-width: 33.33%;
+    margin-top: -9px;
+    img{
+      display: block;
+      height: 94%;
+      width: 94%;
+      padding-bottom: 20px;
+    }
+  }
+
+  .dog-grid-container:nth-child(6) {
+    max-width: 33.33%;
+    margin-top: -34.7%;
+    img{
+      display: block;
+      height: 94%;
+      width: 94%;
+      padding-bottom: 20px;
+    }
+  }
+
+  .dog-grid-container:nth-child(9) {
+    max-width: 33.33%;
+    margin-top: -9px;
+    img{
+      display: block;
+      height: 94%;
+      width: 94%;
+      padding-bottom: 20px;
+    }
+  }
+
+  .dog-grid-container:nth-child(12) {
+    max-width: 33.33%;
+    margin-top: -34.7%;
+    img{
+      display: block;
+      height: 94%;
+      width: 94%;
+      padding-bottom: 20px;
+    }
+  }
+
+  .dog-grid-container:nth-child(15) {
+    max-width: 33.33%;
+    margin-top: -9px;
+    img{
+      display: block;
+      height: 94%;
+      width: 94%;
+      padding-bottom: 20px;
+    }
+  }
+}
+
+@media (max-width: 426px){
+    .our-dogs-banner {
+      background-position: 36.5% 60%;
+      background-size: 555%;
+      height: 404px;
+      padding-bottom: 0px;
+    }
+
+    .dog-grid-container:nth-child(1) {
+      max-width: 100%;
+      img{
+        width: 94%;
+        display: block;
+        padding-bottom: 20px;
+      }
+    }
+
+    .dog-grid-container:nth-child(2) {
+      max-width: 100%;
+      img{
+        display: block;
+        width: 94%;
+        padding-bottom: 20px;
+      }
+    }
+
+    .dog-grid-container:nth-child(3) {
+      max-width: 100%;
+      margin-top: 0;
+      img{
+        display: block;
+        width: 94%;
+        padding-bottom: 20px;
+      }
+    }
+
+    .dog-grid-container:nth-child(4) {
+      max-width: 100%;
+      img{
+        width: 94%;
+        display: block;
+        padding-bottom: 20px;
+      }
+    }
+
+    .dog-grid-container:nth-child(5) {
+      max-width: 100%;
+      img{
+        width: 94%;
+        display: block;
+        padding-bottom: 20px;
+      }
+    }
+
+    .dog-grid-container:nth-child(6) {
+      max-width: 100%;
+      margin-top: 0;
+      img{
+        width: 94%;
+        display: block;
+        padding-bottom: 20px;
+      }
+    }
+
+    .dog-grid-container:nth-child(7) {
+      max-width: 100%;
+      img{
+        width: 94%;
+        display: block;
+        padding-bottom: 20px;
+      }
+    }
+
+    .dog-grid-container:nth-child(8) {
+      max-width: 100%;
+      img{
+        width: 94%;
+        display: block;
+        padding-bottom: 20px;
+      }
+    }
+
+    .dog-grid-container:nth-child(9) {
+      max-width: 100%;
+      margin-top: 0;
+      img{
+        width: 94%;
+        display: block;
+        padding-bottom: 20px;
+      }
+    }
+
+    .dog-grid-container:nth-child(10) {
+      max-width: 100%;
+      img{
+        width: 94%;
+        display: block;
+        padding-bottom: 20px;
+      }
+    }
+
+    .dog-grid-container:nth-child(11) {
+      max-width: 100%;
+      img{
+        width: 94%;
+        display: block;
+        padding-bottom: 20px;
+      }
+    }
+
+    .dog-grid-container:nth-child(12) {
+      max-width: 100%;
+      margin-top: 0;
+      img{
+        width: 94%;
+        display: block;
+        padding-bottom: 20px;
+      }
+    }
+
+    .dog-grid-container:nth-child(13) {
+      max-width: 100%;
+      img{
+        width: 94%;
+        display: block;
+        padding-bottom: 20px;
+      }
+    }
+
+    .dog-grid-container:nth-child(14) {
+      max-width: 100%;
+      img{
+        width: 94%;
+        display: block;
+        padding-bottom: 20px;
+      }
+    }
+
+    .dog-grid-container:nth-child(15) {
+      max-width: 100%;
+      margin-top: 0;
+      img{
+        width: 94%;
+        display: block;
+        padding-bottom: 20px;
+      }
+    }
+
+    .dog-grid-container:nth-child(16) {
+      max-width: 100%;
+      img{
+        width: 94%;
+        display: block;
+        padding-bottom: 20px;
+      }
+    }
+
+    .dog-grid-container:nth-child(17) {
+      max-width: 100%;
+      img{
+        width: 94%;
+        display: block;
+        padding-bottom: 20px;
+      }
+    }
+}
+
+@media (max-width: 426px){
+
+  .our-dogs-banner {
+    background-position: 36.5% 60%;
+    background-size: 1200%;
+    height: 474px;
+    padding-bottom: 0px;
+  }
+
+}
+
+@media (max-width: 321px){
+
+  .our-dogs-banner {
+    background-position: 36.5% 60%;
+    background-size: 1200%;
+    height: 507px;
+    padding-bottom: 0px;
+  }
+
 }

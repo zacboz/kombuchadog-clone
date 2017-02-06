@@ -1406,7 +1406,7 @@ body {
   .dog-grid-container:nth-child(16) img {
     display: block;
     height: 95%;
-    width: 95%;
+    width: 96%;
     padding-bottom: 20px; }
 
 .dog-grid-container:nth-child(17) {
@@ -1414,7 +1414,7 @@ body {
   .dog-grid-container:nth-child(17) img {
     display: block;
     height: 95%;
-    width: 95%;
+    width: 96%;
     padding-bottom: 20px; }
 
 .dog-name-container {
@@ -1433,6 +1433,187 @@ body {
   letter-spacing: .3em;
   font-weight: 600;
   text-transform: uppercase; }
+
+@media (max-width: 1025px) {
+  .our-dogs-banner {
+    background-position: 36.5% 60%;
+    background-size: 272%;
+    height: 582px; } }
+
+@media (max-width: 769px) {
+  .our-dogs-banner {
+    background-position: 36.5% 60%;
+    background-size: 350%;
+    height: 472px;
+    padding-bottom: 0px; }
+  .dog-grid-container:nth-child(3) {
+    max-width: 33.33%;
+    margin-top: -9px; }
+    .dog-grid-container:nth-child(3) img {
+      display: block;
+      height: 94%;
+      width: 94%;
+      padding-bottom: 20px; }
+  .dog-grid-container:nth-child(6) {
+    max-width: 33.33%;
+    margin-top: -34.7%; }
+    .dog-grid-container:nth-child(6) img {
+      display: block;
+      height: 94%;
+      width: 94%;
+      padding-bottom: 20px; }
+  .dog-grid-container:nth-child(9) {
+    max-width: 33.33%;
+    margin-top: -9px; }
+    .dog-grid-container:nth-child(9) img {
+      display: block;
+      height: 94%;
+      width: 94%;
+      padding-bottom: 20px; }
+  .dog-grid-container:nth-child(12) {
+    max-width: 33.33%;
+    margin-top: -34.7%; }
+    .dog-grid-container:nth-child(12) img {
+      display: block;
+      height: 94%;
+      width: 94%;
+      padding-bottom: 20px; }
+  .dog-grid-container:nth-child(15) {
+    max-width: 33.33%;
+    margin-top: -9px; }
+    .dog-grid-container:nth-child(15) img {
+      display: block;
+      height: 94%;
+      width: 94%;
+      padding-bottom: 20px; } }
+
+@media (max-width: 426px) {
+  .our-dogs-banner {
+    background-position: 36.5% 60%;
+    background-size: 555%;
+    height: 404px;
+    padding-bottom: 0px; }
+  .dog-grid-container:nth-child(1) {
+    max-width: 100%; }
+    .dog-grid-container:nth-child(1) img {
+      width: 94%;
+      display: block;
+      padding-bottom: 20px; }
+  .dog-grid-container:nth-child(2) {
+    max-width: 100%; }
+    .dog-grid-container:nth-child(2) img {
+      display: block;
+      width: 94%;
+      padding-bottom: 20px; }
+  .dog-grid-container:nth-child(3) {
+    max-width: 100%;
+    margin-top: 0; }
+    .dog-grid-container:nth-child(3) img {
+      display: block;
+      width: 94%;
+      padding-bottom: 20px; }
+  .dog-grid-container:nth-child(4) {
+    max-width: 100%; }
+    .dog-grid-container:nth-child(4) img {
+      width: 94%;
+      display: block;
+      padding-bottom: 20px; }
+  .dog-grid-container:nth-child(5) {
+    max-width: 100%; }
+    .dog-grid-container:nth-child(5) img {
+      width: 94%;
+      display: block;
+      padding-bottom: 20px; }
+  .dog-grid-container:nth-child(6) {
+    max-width: 100%;
+    margin-top: 0; }
+    .dog-grid-container:nth-child(6) img {
+      width: 94%;
+      display: block;
+      padding-bottom: 20px; }
+  .dog-grid-container:nth-child(7) {
+    max-width: 100%; }
+    .dog-grid-container:nth-child(7) img {
+      width: 94%;
+      display: block;
+      padding-bottom: 20px; }
+  .dog-grid-container:nth-child(8) {
+    max-width: 100%; }
+    .dog-grid-container:nth-child(8) img {
+      width: 94%;
+      display: block;
+      padding-bottom: 20px; }
+  .dog-grid-container:nth-child(9) {
+    max-width: 100%;
+    margin-top: 0; }
+    .dog-grid-container:nth-child(9) img {
+      width: 94%;
+      display: block;
+      padding-bottom: 20px; }
+  .dog-grid-container:nth-child(10) {
+    max-width: 100%; }
+    .dog-grid-container:nth-child(10) img {
+      width: 94%;
+      display: block;
+      padding-bottom: 20px; }
+  .dog-grid-container:nth-child(11) {
+    max-width: 100%; }
+    .dog-grid-container:nth-child(11) img {
+      width: 94%;
+      display: block;
+      padding-bottom: 20px; }
+  .dog-grid-container:nth-child(12) {
+    max-width: 100%;
+    margin-top: 0; }
+    .dog-grid-container:nth-child(12) img {
+      width: 94%;
+      display: block;
+      padding-bottom: 20px; }
+  .dog-grid-container:nth-child(13) {
+    max-width: 100%; }
+    .dog-grid-container:nth-child(13) img {
+      width: 94%;
+      display: block;
+      padding-bottom: 20px; }
+  .dog-grid-container:nth-child(14) {
+    max-width: 100%; }
+    .dog-grid-container:nth-child(14) img {
+      width: 94%;
+      display: block;
+      padding-bottom: 20px; }
+  .dog-grid-container:nth-child(15) {
+    max-width: 100%;
+    margin-top: 0; }
+    .dog-grid-container:nth-child(15) img {
+      width: 94%;
+      display: block;
+      padding-bottom: 20px; }
+  .dog-grid-container:nth-child(16) {
+    max-width: 100%; }
+    .dog-grid-container:nth-child(16) img {
+      width: 94%;
+      display: block;
+      padding-bottom: 20px; }
+  .dog-grid-container:nth-child(17) {
+    max-width: 100%; }
+    .dog-grid-container:nth-child(17) img {
+      width: 94%;
+      display: block;
+      padding-bottom: 20px; } }
+
+@media (max-width: 426px) {
+  .our-dogs-banner {
+    background-position: 36.5% 60%;
+    background-size: 1200%;
+    height: 474px;
+    padding-bottom: 0px; } }
+
+@media (max-width: 321px) {
+  .our-dogs-banner {
+    background-position: 36.5% 60%;
+    background-size: 1200%;
+    height: 507px;
+    padding-bottom: 0px; } }
 
 .our-kombucha-wrapper {
   max-width: 1200px;
