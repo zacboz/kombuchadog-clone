@@ -57,3 +57,26 @@ $story: rgba(82,82,82,.6);
   text-align: left;
   padding-left: 0;
 }
+
+@media (max-width: 769px){
+  .our-kombucha-wrapper {
+    padding: 15px 40px;
+  }
+  #our-content-wrapper {
+    padding: 90px 173px 0px 173px;
+  }
+}
+@media (max-width: 426px){
+  .our-kombucha-wrapper {
+    padding: 75px 20px 0px 20px;
+  }
+  #our-content-wrapper {
+    padding: 90px 0px 0px 0px;
+  }
+}
+@media (max-width: 376px){
+
+}
+@media (max-width: 321px){
+
+}

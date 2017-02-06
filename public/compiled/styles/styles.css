@@ -1889,6 +1889,18 @@ body {
   text-align: left;
   padding-left: 0; }
 
+@media (max-width: 769px) {
+  .our-kombucha-wrapper {
+    padding: 15px 40px; }
+  #our-content-wrapper {
+    padding: 90px 173px 0px 173px; } }
+
+@media (max-width: 426px) {
+  .our-kombucha-wrapper {
+    padding: 75px 20px 0px 20px; }
+  #our-content-wrapper {
+    padding: 90px 0px 0px 0px; } }
+
 .profile-body {
   max-width: 1200px;
   max-height: 100%;
