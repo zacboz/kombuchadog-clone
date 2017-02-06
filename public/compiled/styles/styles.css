@@ -568,6 +568,171 @@ hr {
   font-weight: 600;
   text-transform: uppercase; }
 
+@media (max-width: 1025px) {
+  .home-header-image {
+    background-size: 216%;
+    background-position: 50% 35%; }
+  .home-left-column {
+    width: 50%;
+    float: left; }
+    .home-left-column .left-column-image {
+      width: 93%;
+      height: 421px; }
+    .home-left-column p {
+      letter-spacing: .06em;
+      line-height: 2.4em;
+      padding-right: 83px; }
+  .home-right-column {
+    width: 50%;
+    float: left; }
+    .home-right-column .right-column-image {
+      width: 93%;
+      height: 421px; }
+    .home-right-column p {
+      letter-spacing: .06em;
+      line-height: 2.4em;
+      padding-right: 95px; }
+  .home-meet-dogs-wrapper {
+    padding: 220px 20px; }
+    .home-meet-dogs-wrapper p {
+      font-size: 15px;
+      letter-spacing: .06em;
+      line-height: 2.3em;
+      padding: 0 348px; }
+  .dog-img-wrapper1:nth-child(1) {
+    max-width: 66.67%; }
+    .dog-img-wrapper1:nth-child(1) img {
+      width: 96%;
+      display: block;
+      padding-bottom: 20px; }
+  .dog-img-wrapper1:nth-child(2) {
+    max-width: 33.33%; }
+    .dog-img-wrapper1:nth-child(2) img {
+      display: block;
+      width: 93%;
+      padding-bottom: 20px; }
+  .dog-img-wrapper1:nth-child(3) {
+    max-width: 33.33%; }
+    .dog-img-wrapper1:nth-child(3) img {
+      display: block;
+      width: 93%;
+      padding-bottom: 20px; }
+  .dog-img-wrapper2 {
+    clear: both; }
+  .dog-img-wrapper2:nth-child(1) {
+    float: left;
+    max-width: 33.33%; }
+    .dog-img-wrapper2:nth-child(1) img {
+      width: 92.7%; }
+  .dog-img-wrapper2:nth-child(2) {
+    max-width: 66.67%;
+    float: left;
+    margin-left: 340px;
+    margin-top: -332px; }
+    .dog-img-wrapper2:nth-child(2) img {
+      width: 96.5%; }
+  .dog-img-wrapper2:nth-child(3) {
+    float: left;
+    max-width: 33.33%;
+    margin-top: -330px; }
+    .dog-img-wrapper2:nth-child(3) img {
+      width: 92.7%; } }
+
+@media (max-width: 769px) {
+  .home-header-image {
+    background-size: 267%;
+    background-position: 50% 40%; }
+  .home-columns-wrapper {
+    overflow: auto;
+    padding: 20px 22px 160px 40px; }
+  .home-left-column {
+    width: 50%;
+    float: left; }
+    .home-left-column .left-column-image {
+      width: 93%;
+      height: 321px; }
+    .home-left-column p {
+      letter-spacing: .06em;
+      line-height: 2.4em;
+      padding-right: 71px; }
+  .home-right-column {
+    width: 50%;
+    float: left; }
+    .home-right-column .right-column-image {
+      width: 93%;
+      height: 321px; }
+    .home-right-column p {
+      letter-spacing: .06em;
+      line-height: 2.4em;
+      padding-right: 71px; }
+  .mission-image-wrapper {
+    overflow: auto;
+    text-align: center; }
+    .mission-image-wrapper .mission-image {
+      width: 100%;
+      height: 1014px;
+      background-size: 100%; }
+    .mission-image-wrapper .mission-content {
+      padding: 320px 0px; }
+    .mission-image-wrapper h3 {
+      font-size: 10px;
+      letter-spacing: .18em;
+      margin-bottom: 20px; }
+    .mission-image-wrapper p {
+      font-size: 41px;
+      letter-spacing: .06em;
+      line-height: 1.2;
+      padding: 0 170px;
+      margin: 0 0; }
+  .home-meet-dogs-wrapper {
+    padding: 220px 20px; }
+    .home-meet-dogs-wrapper p {
+      font-size: 15px;
+      letter-spacing: .06em;
+      line-height: 2.3em;
+      padding: 0 251px; }
+  .dog-img-wrapper1:nth-child(1) {
+    max-width: 66.67%; }
+    .dog-img-wrapper1:nth-child(1) img {
+      width: 96%;
+      display: block;
+      padding-bottom: 20px; }
+  .dog-img-wrapper1:nth-child(2) {
+    max-width: 33.33%; }
+    .dog-img-wrapper1:nth-child(2) img {
+      display: block;
+      width: 92%;
+      padding-bottom: 20px; }
+  .dog-img-wrapper1:nth-child(3) {
+    max-width: 33.33%; }
+    .dog-img-wrapper1:nth-child(3) img {
+      display: block;
+      width: 92%;
+      padding-bottom: 20px; }
+  .dog-img-wrapper2 {
+    clear: both; }
+  .dog-img-wrapper2:nth-child(1) {
+    float: left;
+    max-width: 33.33%; }
+    .dog-img-wrapper2:nth-child(1) img {
+      width: 92%; }
+  .dog-img-wrapper2:nth-child(2) {
+    max-width: 66.67%;
+    float: left;
+    margin-left: 250px;
+    margin-top: -250px; }
+    .dog-img-wrapper2:nth-child(2) img {
+      width: 96%;
+      float: left; }
+  .dog-img-wrapper2:nth-child(3) {
+    float: left;
+    max-width: 33.33%;
+    margin-top: -250px; }
+    .dog-img-wrapper2:nth-child(3) img {
+      display: block;
+      width: 92%;
+      padding-bottom: 20px; } }
+
 @media (max-width: 426px) {
   .home-header-image {
     background-size: 449%;
@@ -624,9 +789,9 @@ hr {
     .mission-image-wrapper .mission-image {
       width: 100%;
       height: 883px;
-      background-size: 404%; }
+      background-size: 450%; }
     .mission-image-wrapper .mission-content {
-      padding: 335px 0px; }
+      padding: 320px 0px; }
     .mission-image-wrapper h3 {
       font-size: 10px;
       letter-spacing: .18em;
@@ -681,6 +846,22 @@ hr {
       width: 94%;
       display: block;
       padding-bottom: 20px; } }
+
+@media (max-width: 376px) {
+  .home-header-image {
+    background-size: 460%;
+    background-position: 50% 50%; }
+  .best-of-la-image img {
+    width: 315px;
+    height: 92px; } }
+
+@media (max-width: 321px) {
+  .home-header-image {
+    background-size: 535%;
+    background-position: 50% 50%; }
+  .best-of-la-image img {
+    width: 260px;
+    height: 76px; } }
 
 .site-nav {
   padding: 45px 40px;
