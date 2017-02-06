@@ -3,6 +3,8 @@ $lato: 'Lato', sans-serif;
 $tagline: rgb(125, 125, 125);
 $teko: 'Teko', sans-serif;
 $story: rgba(82,82,82,.6);
+$link: rgba(82,82,82,.36);
+
 
 .home-wrapper {
   max-width: 1200px;
@@ -105,6 +107,7 @@ $story: rgba(82,82,82,.6);
     background-image: url('/images/kombuchaflavors/ginger.jpg');
     background-position: center;
     background-size: 100%;
+    background-repeat: no-repeat;
   }
   h2 {
     font-family: $teko;
@@ -123,6 +126,14 @@ $story: rgba(82,82,82,.6);
     letter-spacing: .1em;
     line-height: 2.4em;
     padding-right: 77px;
+  }
+  #link {
+    text-decoration: underline;
+    // font-size: 15px;
+    font-weight: 600;
+  }
+  #link:hover {
+    color: $link;
   }
 }
 
@@ -270,8 +281,6 @@ $story: rgba(82,82,82,.6);
   }
 }
 
-
-
 .home-dog-name {
   position: absolute;
   float: left;
@@ -286,4 +295,172 @@ $story: rgba(82,82,82,.6);
   letter-spacing: .3em;
   font-weight: 600;
   text-transform: uppercase;
+}
+
+@media (max-width: 426px){
+
+  .home-header-image {
+    background-size: 449%;
+    background-position: 50% 46%;
+  }
+
+  .best-of-la-image {
+    padding-bottom: 100px;
+    img {
+      width: 366.5px;
+      height: 106.5px;
+    }
+  }
+
+  .enjoy-wrapper {
+    h1 {
+      font-family: $teko;
+      color: black;
+      font-weight: 500;
+      font-size: 32px;
+      letter-spacing: .05em;
+      line-height: 1.2;
+      margin: 20px 0px;
+    }
+    p{
+      font-family: $lato;
+      color: black;
+      font-weight: 600;
+      font-size: 10px;
+      letter-spacing: .17em;
+    }
+  }
+
+  .home-columns-wrapper {
+    overflow: auto;
+    padding: 30px 2px 160px 21px;
+  }
+
+  .home-left-column {
+    width: 100%;
+    .left-column-image{
+      width: 95%;
+      height: 365px;
+    }
+    h2 {
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 15px;
+      letter-spacing: .06em;
+      line-height: 2.3em;
+      padding-right: 20px;
+    }
+  }
+
+  .home-right-column {
+    width: 100%;
+    .right-column-image{
+      width: 95%;
+      height: 365px;
+    }
+    h2 {
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 15px;
+      letter-spacing: .06em;
+      line-height: 2.3em;
+      padding-right: 20px;
+    }
+  }
+
+  .mission-image-wrapper {
+    overflow: auto;
+    text-align: center;
+    .mission-image {
+      width: 100%;
+      height: 883px;
+      background-size: 404%;
+    }
+    .mission-content {
+      padding: 335px 0px;
+    }
+    h3 {
+      font-size: 10px;
+      letter-spacing: .18em;
+      margin-bottom: 17px;
+    }
+    p {
+      font-size: 33px;
+      letter-spacing: .06em;
+      line-height: 1.2;
+      padding: 0 15px 0 15px;
+      margin: 0 0;
+    }
+  }
+
+  .home-meet-dogs-wrapper {
+    padding: 220px 20px;
+    p {
+      font-size: 15px;
+      letter-spacing: .06em;
+      line-height: 2.3em;
+      padding: 0 0;
+    }
+  }
+
+  .dog-img-wrapper1:nth-child(1) {
+    max-width: 100%;
+    img{
+      width: 94%;
+      display: block;
+      padding-bottom: 20px;
+    }
+  }
+
+  .dog-img-wrapper1:nth-child(2) {
+    max-width: 100%;
+    img{
+      display: block;
+      width: 94%;
+      padding-bottom: 20px;
+    }
+  }
+
+  .dog-img-wrapper1:nth-child(3) {
+    max-width: 100%;
+    img{
+      display: block;
+      width: 94%;
+      padding-bottom: 20px;
+    }
+  }
+
+  .dog-img-wrapper2:nth-child(1) {
+    max-width: 100%;
+    img{
+      display: block;
+      width: 94%;
+      padding-bottom: 20px;
+    }
+  }
+
+  .dog-img-wrapper2:nth-child(2) {
+    max-width: 100%;
+    img{
+      width: 94%;
+      display: block;
+      padding-bottom: 20px;
+    }
+  }
+
+  .dog-img-wrapper2:nth-child(3) {
+    max-width: 100%;
+    margin-top: 0px;
+    img{
+      width: 94%;
+      display: block;
+      padding-bottom: 20px;
+    }
+  }
+
+
+
+
 }

@@ -7,11 +7,38 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Open+Sans:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Teko" rel="stylesheet">
     <script src="https://use.fontawesome.com/fb90e48d3e.js"></script>
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="/compiled/styles/styles.css">
   </head>
 
   <body ng-controller="indexCtrl">
     <!-- <header class='site-header'> -->
+  <div class='mobile-menu'>
+    <a class='close close-btn'><div class="ion-android-close"></div></a>
+    <div class='mobile-routes-menu'>
+      <!-- <a class='close close-btn'><div class="ion-android-close"></div></a> -->
+      <div class='hidden-nav-items'>
+        <a ui-sref='about'>ABOUT</a>
+        <a ui-sref='our-kombucha'>OUR KOMBUCHA</a>
+        <a ui-sref='our-dogs'>OUR DOGS</a>
+        <a ui-sref='find-kombucha'>FIND KOMBUCHA DOG</a>
+        <a ui-sref='merchandise'>MERCHANDISE</a>
+        <a class='social-menu'>FOLLOW US &raquo;</a>
+      </div>
+    </div>
+    <div class='mobile-social-menu'>
+      <!-- <a class='close close-btn'><div class="ion-android-close"></div></a> -->
+      <div class="social-items">
+        <a class='back-link back'>&laquo; BACK</a>
+        <a href="https://www.instagram.com/kombuchadog/">INSTAGRAM</a>
+        <a href="https://www.facebook.com/KombuchaDog/">FACEBOOK</a>
+        <a href="https://twitter.com/KOMBUCHADOG">TWITTER</a>
+        <a href="https://www.pinterest.com/kombuchadog/">PINTEREST</a>
+      </div>
+    </div>
+  </div>
+
+
       <navbar></navbar>
     <!-- </header> -->
     <div class='main-wrapper'>

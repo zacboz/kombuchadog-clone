@@ -1,23 +1,25 @@
-<nav class='site-nav'>
+<nav class='site-nav hidden-nav'>
   <a ui-sref='home' class='header-title' href='#'>
     <img class="header header-title-logo" src="//static1.squarespace.com/static/578ffe17e6f2e15aa9c2207f/t/57ebd38615d5dbca6f50a52d/1484451281190/?format=1500w" alt="Kombucha Dog">
-    <div class="header header-tagline" data-nc-element="tagline">The best there is</div>
-    <div class='header header-cart'><a class='cart' ui-sref='cart'>CART   <cartnav></cartnav></a></div>
-    <div class='header header-items'>
-      <a class='header-nav-item' ui-sref='about'>ABOUT</a>
-      <a class='header-nav-item' ui-sref='our-kombucha'>OUR KOMBUCHA</a>
-      <a class='header-nav-item' ui-sref='our-dogs'>OUR DOGS</a>
-      <a class='header-nav-item' ui-sref='find-kombucha'>FIND KOMBUCHA DOG</a>
-      <a class='header-nav-item' ui-sref='merchandise'>MERCHANDISE</a>
-      <span class='dropdown'>
-        <a class='header-nav-item dropbtn' href='https://www.instagram.com/kombuchadog/'>FOLLOW US</a>
-          <div class="dropdown-content">
-            <a href="https://www.instagram.com/kombuchadog/">INSTAGRAM</a>
-            <a href="https://www.facebook.com/KombuchaDog/">FACEBOOK</a>
-            <a href="https://twitter.com/KOMBUCHADOG">TWITTER</a>
-            <a href="https://www.pinterest.com/kombuchadog/">PINTEREST</a>
-          </div>
-      </span>
-    </div>
   </a>
+  <a class='hamburger activate-mobile-menu'><div class="icon-bars ion-navicon"></div>
+  </a>
+  <div class="header header-tagline" data-nc-element="tagline">The best there is</div>
+  <div class='header header-cart'><a class='cart' ui-sref='cart'>CART   <cartnav></cartnav></a></div>
+  <div class='header header-items'>
+    <a class='header-nav-item' ui-sref='about'>ABOUT</a>
+    <a class='header-nav-item' ui-sref='our-kombucha'>OUR KOMBUCHA</a>
+    <a class='header-nav-item' id='tablet-view' ui-sref='our-dogs'>OUR DOGS</a>
+    <a class='header-nav-item' id='tablet-view' ui-sref='find-kombucha'>FIND KOMBUCHA DOG</a>
+    <a class='header-nav-item' ui-sref='merchandise'>MERCHANDISE</a>
+    <span class='dropdown'>
+      <a class='header-nav-item dropbtn' href='https://www.instagram.com/kombuchadog/'>FOLLOW US</a>
+        <div class="dropdown-content">
+          <a href="https://www.instagram.com/kombuchadog/">INSTAGRAM</a>
+          <a href="https://www.facebook.com/KombuchaDog/">FACEBOOK</a>
+          <a href="https://twitter.com/KOMBUCHADOG">TWITTER</a>
+          <a href="https://www.pinterest.com/kombuchadog/">PINTEREST</a>
+        </div>
+    </span>
+  </div>
 </nav>

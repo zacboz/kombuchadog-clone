@@ -35,6 +35,8 @@ angular.module('kombuchadog')
   });
 
 $scope.removeFromCart = (item) => {
+  $rootScope.cartTotal = findTotalItems();
+
   console.log('remove CTRL', item)
   mainSrvc.removeFromCart(item).then(() => {
     mainSrvc.getCart().then((response) => {
@@ -48,12 +50,8 @@ $scope.removeFromCart = (item) => {
 };
 
 $scope.updateQuantity = (item) => {
-  $rootScope.cartTotal = findTotalItems()
-
+  $rootScope.cartTotal = findTotalItems();
   console.log(item)
-  // console.log($scope.cart);
-  // console.log($scope.cart[0].productId);
-  // const productId = $scope.cart.productId;
   mainSrvc.updateQuantity(item.productId, item.productQuantity);
     mainSrvc.getCart().then((response) => {
       $scope.cart = response.data;

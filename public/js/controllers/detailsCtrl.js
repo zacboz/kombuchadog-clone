@@ -26,9 +26,7 @@ angular.module('kombuchadog')
     const productPrice = $scope.details.price;
     const productImage = $scope.details.image;
     const productId = $scope.details.id;
-
     mainSrvc.addToCart(productTitle, productImage, productSize, productQuantity, productPrice, productId);
-      alert('product added to cart');
   };
 
   $scope.changeProduct = (direction) => {

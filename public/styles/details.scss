@@ -15,13 +15,18 @@ $select: rgb(246, 246, 246);
 
 .prev-next {
   padding-left: 62px;
-  p {
+  span {
     font-family: $lato;
     font-weight: 400;
     font-size: 9px;
     letter-spacing: .22em;
     color: $tagline;
   }
+}
+
+.slash {
+  padding-left: 6px;
+  padding-right: 6px;
 }
 
 .details-gallery {
@@ -121,6 +126,7 @@ $select: rgb(246, 246, 246);
   font-size: 11px;
   letter-spacing: .15em;
   color: $tagline;
+  cursor: pointer;
 }
 
 .select-size:focus {
@@ -138,6 +144,7 @@ $select: rgb(246, 246, 246);
   margin-bottom: 25px;
   color: $tagline;
   font-size: 12px;
+  cursor: pointer;
 }
 
 .quantity-input:focus {
