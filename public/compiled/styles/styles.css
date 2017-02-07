@@ -386,12 +386,13 @@ hr {
   height: 100%;
   margin-left: auto;
   margin-right: auto;
-  overflow: auto; }
+  overflow: auto;
+  float: right; }
 
 .details-column {
-  width: 40%;
+  width: 41%;
   height: 100%;
-  float: left;
+  float: right;
   padding: 0 50px; }
 
 .details-title {
@@ -404,7 +405,7 @@ hr {
     line-height: 1em;
     color: black;
     text-transform: uppercase;
-    margin-bottom: 0px;
+    margin-bottom: 20px;
     margin-top: 0px; }
 
 .details-price {
@@ -416,7 +417,7 @@ hr {
     letter-spacing: .15em;
     color: rgba(82, 82, 82, 0.6);
     margin-bottom: 14px;
-    margin-top: 18px; }
+    margin-top: 5px; }
 
 .details {
   overflow: auto;
@@ -507,24 +508,67 @@ hr {
 .shirt-img-column {
   width: 50%;
   height: 100%;
-  float: left; }
+  float: right; }
   .shirt-img-column img {
     width: 90%;
     height: 100%; }
 
-@media (max-width: 769px) {
+@media (max-width: 1025px) {
   .shirt-img-column {
-    width: 40%;
-    height: 100%;
-    float: left; }
+    width: 49%;
+    height: 100%; }
     .shirt-img-column img {
       width: 90%;
       height: 100%; }
   .details-column {
     width: 40%;
     height: 100%;
-    float: left;
     padding: 0 50px; } }
+
+@media (max-width: 769px) {
+  .prev-next {
+    padding-left: 35px; }
+    .prev-next span {
+      font-family: "Lato", sans-serif;
+      font-weight: 400;
+      font-size: 9px;
+      letter-spacing: .22em;
+      color: gray; }
+  .shirt-img-column {
+    width: 45%;
+    height: 100%; }
+    .shirt-img-column img {
+      width: 90%;
+      height: 100%; }
+  .details-column {
+    width: 50%;
+    height: 100%;
+    padding: 0 4px; } }
+
+@media (max-width: 426px) {
+  .details-body {
+    padding: 60px 20px 20px 20px; }
+  .prev-next {
+    padding-left: 0px; }
+    .prev-next span {
+      font-family: "Lato", sans-serif;
+      font-weight: 400;
+      font-size: 9px;
+      letter-spacing: .22em;
+      color: gray; }
+  .shirt-img-column {
+    width: 100%;
+    height: 100%;
+    display: block;
+    padding-bottom: 20px; }
+    .shirt-img-column img {
+      width: 100%;
+      height: 100%; }
+  .details-column {
+    width: 100%;
+    height: 100%;
+    display: block;
+    padding: 0 0; } }
 
 .home-wrapper {
   max-width: 1200px;

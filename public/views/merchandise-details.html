@@ -4,6 +4,9 @@
     <a><span ng-click="changeProduct(-1)" ng-show='previous'>&lsaquo; PREVIOUS </span><span ng-show='slash' class='slash'> / </span><span ng-click="changeProduct(1)" ng-show='next'> NEXT &rsaquo;</span></a>
   </div>
   <div class=details-gallery>
+    <div class='shirt-img-column'>
+      <img class='shirt-img' src='{{details.image}}' alt='product image'>
+    </div>
     <div class=details-column>
       <div class='details-title'>
         <h1 class='shirt-title'>{{details.title}}</h1>
@@ -48,8 +51,8 @@
         <a class="add-button" ng-click='addToCart(productSize, productQuantity)'>ADD TO CART</a>
       </div>
     </div>
-    <div class='shirt-img-column'>
+    <!-- <div class='shirt-img-column'>
       <img class='shirt-img' src='{{details.image}}' alt='product image'>
-    </div>
+    </div> -->
   </div>
 </div>
