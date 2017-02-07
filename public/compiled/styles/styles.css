@@ -1085,6 +1085,7 @@ hr {
   bottom: 0;
   left: 0;
   z-index: 2;
+  position: fixed;
   transform: translateX(-100%);
   transition: transform 0.6s cubic-bezier(0.56, 0.1, 0.34, 0.91); }
   .mobile-menu .close-btn {
@@ -1915,14 +1916,15 @@ body {
   vertical-align: middle;
   margin-left: auto;
   margin-right: auto;
-  overflow: auto; }
+  overflow: auto;
+  float: right; }
 
 .profile-column {
-  width: 45%;
+  width: 41%;
   height: 100%;
-  display: inline-block;
+  float: right;
   vertical-align: middle;
-  padding: 3px 30px; }
+  padding: 0px 108px 10px 0px; }
 
 .profile-name {
   overflow: auto; }
@@ -1985,10 +1987,28 @@ body {
   color: white; }
 
 .profile-image-container {
-  width: 45%;
+  width: 50%;
   height: 100%;
   vertical-align: middle;
-  display: inline-block;
+  float: right;
+  overflow: hidden; }
+  .profile-image-container img {
+    width: 100%;
+    height: 100%; }
+
+@media (max-width: 1025px) {
+  .profile-column {
+    width: 41%;
+    height: 100%;
+    float: right;
+    vertical-align: middle;
+    padding: 0px 50px 10px 0px; } }
+
+.profile-image-container {
+  width: 50%;
+  height: 100%;
+  vertical-align: middle;
+  float: right;
   overflow: hidden; }
   .profile-image-container img {
     width: 100%;
@@ -1996,23 +2016,49 @@ body {
 
 @media (max-width: 769px) {
   .profile-body {
-    padding: 20px 20px 20px 30px;
-    position: relative; }
+    padding: 20px 20px 20px 30px; }
   .profile-image-container {
     width: 100%;
-    position: absolute;
-    top: 0;
-    padding-left: 64px; }
+    text-align: center; }
     .profile-image-container img {
       width: 75%;
       height: 400px; }
   .profile-column {
-    width: 90%;
+    width: 75%;
     height: 100%;
-    position: relative;
     display: block;
     vertical-align: middle;
-    padding: 380px 40px 3px 40px; } }
+    padding: 40px 88px 0px 0px; } }
+
+@media (max-width: 426px) {
+  .profile-body {
+    padding: 50px 20px 20px 20px; }
+  .profile-image-container {
+    width: 100%;
+    text-align: center; }
+    .profile-image-container img {
+      width: 100%;
+      height: 390px; }
+  .profile-column {
+    width: 100%;
+    height: 100%;
+    padding: 40px 0px 0px 0px; } }
+
+@media (max-width: 376px) {
+  .profile-image-container {
+    width: 100%;
+    text-align: center; }
+    .profile-image-container img {
+      width: 100%;
+      height: 340px; } }
+
+@media (max-width: 321px) {
+  .profile-image-container {
+    width: 100%;
+    text-align: center; }
+    .profile-image-container img {
+      width: 100%;
+      height: 280px; } }
 
 .success-body {
   max-width: 1200px;

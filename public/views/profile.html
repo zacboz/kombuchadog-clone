@@ -1,6 +1,10 @@
 <div class='profile-body'>
   <div class='profile-container'>
 
+    <div class='profile-image-container'>
+      <img class='profile-image' src='{{profile[0].image}}' alt='dog image'>
+    </div>
+
     <div class='profile-column'>
       <div class='profile-name'>
         <h1 class='name'>{{profile[0].name}}</h1>
@@ -27,11 +31,6 @@
           <a class="profile-btn" ui-sref='success-stories'>MORE SUCCESS STORIES</a>
         </div>
       </div>
-    </div>
-
-
-    <div class='profile-image-container'>
-      <img class='profile-image' src='{{profile[0].image}}' alt='dog image'>
     </div>
 
   </div>
