@@ -6,7 +6,7 @@ const session = require('express-session');
 const config = require('./config')
 const stripe = require("stripe")("sk_test_BQokikJOvBiI2HlWgH4olfQ2");
 
-const port = 3023;
+const port = config.port;
 
 const app = module.exports = express();
 app.use(bodyParser.json());
@@ -19,7 +19,7 @@ app.use(session({
 }));
 
 const conn = massive.connectSync({
-  connectionString : "postgres://postgres:@localhost/kombuchadog-clone"
+  connectionString : config.postgresString
 });
 app.set('db', conn);
 const db = app.get('db');
@@ -40,6 +40,6 @@ app.post('/order', mainController.postOrder);
 
 
 
-app.listen(3023, () => {
+app.listen(port, () => {
   console.log('Connected on port', port)
 });
