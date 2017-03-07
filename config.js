@@ -1,5 +1,5 @@
 module.exports = {
-  sessionSecret: 'keyboard cat'
+  sessionSecret: 'keyboard cat',
   port: 3023,
   postgresString: "postgres://postgres:@localhost/kombuchadog-clone"
 }
