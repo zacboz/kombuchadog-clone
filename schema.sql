@@ -40,23 +40,6 @@ CREATE TABLE orderitems (
 --   website TEXT
 -- );
 
--- CREATE TABLE cart (
---   id SERIAL PRIMARY KEY,
---   productId INT references merchandise,
---   title TEXT,
---   price VARCHAR(10),
---   image TEXT,
---   size VARCHAR(10),
---   quantity INT
--- );
-
--- CREATE TABLE users (
---   id SERIAL PRIMARY KEY,
---   name VARCHAR(30),
---   location TEXT,
---   imageurl TEXT
--- );
-
 ======================================================
       UP FOR ADOPTION
 ======================================================
