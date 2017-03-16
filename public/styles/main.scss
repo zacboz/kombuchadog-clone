@@ -21,7 +21,6 @@ $mobile: rgba(82,82,82,.7);
   left: 0;
   z-index: 2;
   position: fixed;
-  // display: none;
   transform: translateX(-100%);
   transition: transform 0.6s cubic-bezier(.56,.1,.34,.91);
   .close-btn {
@@ -33,12 +32,7 @@ $mobile: rgba(82,82,82,.7);
     padding-top: 10px;
     position: absolute;
   }
-  // .menu-close & {
-  //   transform: translateX(-100%);
-  //   transition: transform 0.6s cubic-bezier(.56,.1,.34,.91);
-  // }
   .mobile-open & {
-    // display: none;
     transform: translateX(0%);
     transition: transform 0.6s cubic-bezier(.56,.1,.34,.91);
   }
@@ -172,7 +166,6 @@ $mobile: rgba(82,82,82,.7);
 }
 
 .header-nav-item {
-  // color: $cart;
   display: inline-block;
   padding: .618em;
   vertical-align: middle;
@@ -212,7 +205,6 @@ a, .dropbtn {
     position: absolute;
     background-color: white;
     min-width: 107px;
-    // box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
 
@@ -241,7 +233,6 @@ body {
   background-color: #ffffff;
   max-width: 1200px;
   max-height: 100%;
-  // width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -255,7 +246,6 @@ body {
 .footer-container {
   text-align: center;
   padding: 100px 34px 175px 34px;
-  // position: relative;
   max-height: 490px;
   max-width: 1200px;
 }
@@ -265,13 +255,7 @@ body {
   width: 100%;
   height: auto;
   color: black;
-  // margin-right: auto;
-  // margin-left: auto;
   padding: 45px 17px;
-  // position: relative;
-  // outline: none;
-  // box-shadow: inset 0 0 0 1px rgba(128,128,128,0);
-  // transition: box-shadow .2s ease-in-out;
 }
 
 .social-icons:hover {
