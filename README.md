@@ -12,32 +12,32 @@ Kombuchadog Clone is a Full Stack (SQL, Express, Angular, Node) web application.
 
 ####1.1 Technologies
 
-HTML/CSS
-Fully Responsive
-AngularJS
-jQuery
-Sass
+* Fully Responsive
+* HTML/CSS
+* AngularJS
+* jQuery
+* Sass
 
 2. Back-End
 
 ####2.1 Technologies
 
-PostgresSQL
-Node.js
-Express
+* PostgresSQL
+* Node.js
+* Express
 
 3. Additional Tools
 
-Gulp
-Stripe
+* Gulp
+* Stripe
 
 4. Screenshots
 
-[Home Page] (http://i.imgur.com/y8o0YbJ.png)
-[About Page] (http://i.imgur.com/tHcwL5q.png)
-[How the Kombucha is Made] (http://i.imgur.com/PHMVtK1.png)
-[Our Dogs Page] (http://i.imgur.com/0HBgZ3g.jpg)
-[Merchandise Page] (http://i.imgur.com/GYI8haT.png)
-[Merchandise Details Page] (http://i.imgur.com/kNGHzuM.png)
-[Cart Page] (http://i.imgur.com/mYEp9Dp.png)
-[Checkout with Stripe] (http://i.imgur.com/krnSf8r.png)
+* [Home Page] (http://i.imgur.com/y8o0YbJ.png)
+* [About Page] (http://i.imgur.com/tHcwL5q.png)
+* [How the Kombucha is Made] (http://i.imgur.com/PHMVtK1.png)
+* [Our Dogs Page] (http://i.imgur.com/0HBgZ3g.jpg)
+* [Merchandise Page] (http://i.imgur.com/GYI8haT.png)
+* [Merchandise Details Page] (http://i.imgur.com/kNGHzuM.png)
+* [Cart Page] (http://i.imgur.com/mYEp9Dp.png)
+* [Checkout with Stripe] (http://i.imgur.com/krnSf8r.png)
