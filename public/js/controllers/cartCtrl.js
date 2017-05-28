@@ -4,9 +4,16 @@ angular.module('kombuchadog')
   $scope.subtotal = 0;
   $scope.cart;
 
+  // if($scope.cart == 0 ) {
+  //   document.getElementById('cart-page').style.display = "none";
+  //   document.getElementById('empty-cart').style.display = "block";
+  // }
+
   let cartTotal = () => {
     // console.log('running cartTotal', $scope.cart);
     if (!$scope.cart || $scope.cart.length === 0) {
+      document.getElementById('cart-page').style.display = "none";
+      document.getElementById('empty-cart').style.display = "block";
       $scope.cart = [];
       $scope.subtotal = 0;
     } else {

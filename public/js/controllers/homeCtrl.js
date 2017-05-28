@@ -1,8 +1,6 @@
 angular.module('kombuchadog')
 .controller('homeCtrl', function($scope, mainSrvc, $stateParams, $rootScope){
 
-
-
   var velocity = 0.4;
 
   function update(){
@@ -18,7 +16,7 @@ angular.module('kombuchadog')
   $(window).bind('scroll', update);
 
   var i = 0;
-  var myVar = setInterval(changeImage, 2000);
+  setInterval(changeImage, 2000);
 
   function changeImage(){
     //array of backgrounds
@@ -32,7 +30,4 @@ angular.module('kombuchadog')
         i++;
     }
   }
-
- // window.setInterval("changeImage()", 5000);
-
 });

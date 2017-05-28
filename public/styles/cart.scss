@@ -17,6 +17,18 @@ $line: rgba(221, 221, 221,.8);
   padding: 20px 65px;
 }
 
+#empty-cart {
+  display: none;
+}
+
+.empty-cart-text {
+  font-family: $lato;
+  font-weight: 900;
+  font-size: 13px;
+  letter-spacing: .12em;
+  color: $shopping;
+}
+
 .shopping-header {
   h1 {
     font-family: $teko;
