@@ -92,14 +92,14 @@ $mobile: rgba(82,82,82,.7);
     line-height: 1.8em;
     padding-bottom: 8px;
   }
-	.social-open & {
-		transform: translateX(0);
-  }
   .social-right & {
     transform: translateX(120%);
   }
+  .social-open & {
+		transform: translateX(0);
+  }
   .hidden-social & {
-    display: none;
+    opacity: 0;
   }
 }
 

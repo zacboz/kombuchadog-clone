@@ -1191,12 +1191,12 @@ hr {
     letter-spacing: .25em;
     line-height: 1.8em;
     padding-bottom: 8px; }
-  .social-open .mobile-social-menu {
-    transform: translateX(0); }
   .social-right .mobile-social-menu {
     transform: translateX(120%); }
+  .social-open .mobile-social-menu {
+    transform: translateX(0); }
   .hidden-social .mobile-social-menu {
-    display: none; }
+    opacity: 0; }
 
 .hamburger {
   display: none; }
