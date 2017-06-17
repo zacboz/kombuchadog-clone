@@ -2554,3 +2554,13 @@ body {
     background-size: 1500%;
     padding-bottom: 0px;
     height: 507px; } }
+
+@media (min-width: 1440px) {
+  .success-grid-container:nth-child(6) img {
+    height: 91.4vh;
+    padding-top: 5px; } }
+
+@media (min-width: 2560px) {
+  .success-grid-container:nth-child(6) img {
+    height: 48.3vh;
+    padding-top: 5px; } }
