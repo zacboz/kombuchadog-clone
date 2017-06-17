@@ -227,7 +227,8 @@ hr {
   font-weight: 400;
   height: auto;
   width: auto;
-  padding: 12px 32px; }
+  padding: 12px 32px;
+  transition: background .2s ease; }
 
 .checkout-button:hover {
   background-color: black;
@@ -509,7 +510,8 @@ hr {
   font-weight: 600;
   height: auto;
   width: auto;
-  padding: 26px 48px; }
+  padding: 26px 48px;
+  transition: background .2s ease; }
 
 .add-button:hover {
   background-color: black;
@@ -1330,10 +1332,10 @@ body {
 
 .social-icons {
   box-sizing: border-box;
-  width: 100%;
+  width: 150px;
   height: auto;
   color: black;
-  padding: 45px 17px; }
+  margin: 45px auto; }
 
 .social-icons:hover {
   color: rgba(82, 82, 82, 0.3); }
@@ -1346,7 +1348,7 @@ body {
   color: black; }
 
 .footer-items {
-  padding: 23px 0px;
+  margin: 23px 0;
   color: #868686; }
 
 .footer-items:hover {
@@ -1548,7 +1550,8 @@ body {
   font-weight: 600;
   height: auto;
   width: auto;
-  padding: 22px 38px; }
+  padding: 22px 38px;
+  transition: background .2s ease; }
 
 .block-button:hover {
   background-color: black;
@@ -2034,7 +2037,8 @@ body {
   font-weight: 700;
   height: auto;
   width: auto;
-  padding: 13px 22px; }
+  padding: 13px 22px;
+  transition: background .2s ease; }
 
 .profile-btn:hover {
   background-color: black;

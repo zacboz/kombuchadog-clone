@@ -113,6 +113,7 @@ $mobile: rgba(82,82,82,.7);
 
 .header {
   padding: 16.5px 24px;
+  // margin: 22px 24px 8px 24px;
 }
 
 .header-title-logo {
@@ -252,10 +253,10 @@ body {
 
 .social-icons {
   box-sizing: border-box;
-  width: 100%;
+  width: 150px;
   height: auto;
   color: black;
-  padding: 45px 17px;
+  margin: 45px auto;
 }
 
 .social-icons:hover {
@@ -273,7 +274,7 @@ body {
 
 
 .footer-items {
-  padding: 23px 0px;
+  margin: 23px 0;
   color: $cart;
 }
 
