@@ -2,7 +2,6 @@ angular.module('kombuchadog').controller('successCtrl', function($scope, mainSrv
 
   mainSrvc.getAdopted().then((response) => {
     $scope.adopted = response.data;
-    console.log($scope.adopted);
   });
 
   var velocity = 0.2;

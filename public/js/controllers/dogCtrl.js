@@ -2,7 +2,6 @@ angular.module('kombuchadog').controller('dogCtrl', function($scope, mainSrvc, $
 
   mainSrvc.getUpForAdoption().then((response) => {
     $scope.dogs = response.data;
-    console.log($scope.dogs);
   });
 
   var velocity = 0.2;
@@ -20,7 +19,7 @@ angular.module('kombuchadog').controller('dogCtrl', function($scope, mainSrvc, $
   $(window).bind('scroll', update);
 
 
-  
+
 
 
 });

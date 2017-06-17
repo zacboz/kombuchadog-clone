@@ -3,7 +3,6 @@ angular.module('kombuchadog').controller('merchandiseCtrl', function($scope, mai
 
   mainSrvc.getMerchandise().then(function(response){
     $scope.merchandise = response.data;
-    console.log($scope.merchandise);
   })
 
 });

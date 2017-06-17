@@ -10,7 +10,6 @@ getUpForAdoption: (req, res) => {
       console.log(err);
       res.status(200).json(err);
     } else {
-      // console.log('getting our dogs', response)
       res.status(200).json(response);
     }
   });
@@ -22,7 +21,6 @@ getAdopted: (req, res) => {
       console.log(err);
       res.status(200).json(err);
     } else {
-      // console.log('getting success stories', response)
       res.status(200).json(response);
     }
   });
@@ -34,7 +32,6 @@ getDogProfile: (req, res) => {
       console.log(err);
       res.status(200).json(err);
     } else {
-      // console.log('getting dog by name', response)
       res.status(200).json(response);
     }
   });
@@ -46,7 +43,6 @@ getMerchandise: (req, res) => {
       console.log(err);
       res.status(200).json(err);
     } else {
-      // console.log('getting merchandise', response)
       res.status(200).json(response);
     }
   });
@@ -58,7 +54,6 @@ getMerchandiseDetails: (req, res) => {
       console.log(err);
       res.status(200).json(err);
     } else {
-      // console.log('getting merchandise details', response)
       res.status(200).json(response);
     }
   });
@@ -69,18 +64,17 @@ addToCart: (req, res) => {
     req.session.cart = [];
   }
     req.session.cart.push(req.body);
-    // console.log('adding to cart', req.session.cart)
     res.json(req.session.cart)
 },
 
 getCart: (req, res) => {
-  console.log('getting cart', req.session.cart);
+  // console.log('getting cart', req.session.cart);
   res.json(req.session.cart);
 },
 
 removeFromCart: (req, res) => {
   // console.log(req.params.id)
-  console.log('trying to remove', req.session.cart);
+  // console.log('trying to remove', req.session.cart);
   for (let i = 0; i < req.session.cart.length; i++) {
     if (req.session.cart[i].productId == req.params.id) {
       req.session.cart.splice(i, 1);
@@ -95,14 +89,14 @@ updateQuantity: (req, res) => {
     if (req.session.cart[i].productId == req.params.productId) {
       // console.log('original quantity', req.session.cart[i].productQuantity);
       req.session.cart[i].productQuantity = req.body.productQuantity;
-      console.log('new quantity', req.session.cart[i].productQuantity);
+      // console.log('new quantity', req.session.cart[i].productQuantity);
       res.json(req.session.cart);
     }
   }
 },
 
 postOrder: (req, res) => {
-  console.log('BODY', req.body);
+  // console.log('BODY', req.body);
   var token = req.body.token.id; // Using Express
 // Charge the user's card:
 stripe.customers.create({
@@ -128,16 +122,16 @@ stripe.customers.create({
       if (err) {
         console.log('ORDER ERROR!!!!!!!', err);
       } else {
-        console.log('ORDER', response);
+        // console.log('ORDER', response);
        for (let i = 0; i < backcart.length; i++) {
-         console.log(backcart[i].productId, backcart[i].productSize, backcart[i].productQuantity);
+        //  console.log(backcart[i].productId, backcart[i].productSize, backcart[i].productQuantity);
          db.create_orderitems(response[0].id, backcart[i].productId, backcart[i].productSize, backcart[i].productQuantity, (err, response) => {
            if (err) {
              console.log('ORDERITEMS ERROR!!!!!!!', err);
            }
          });
        }
-       console.log('ORDERITEMS', response);
+      //  console.log('ORDERITEMS', response);
        res.status(200).json(response);
       }
       });

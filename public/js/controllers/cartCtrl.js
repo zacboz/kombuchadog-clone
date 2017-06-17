@@ -13,7 +13,6 @@ angular.module('kombuchadog')
       $scope.subtotal = 0;
     } else {
       $scope.cart.forEach((element, index) => {
-        // console.log(element);
         $scope.subtotal += parseInt(element.productPrice) * parseInt(element.productQuantity);
       });
     };
@@ -24,13 +23,11 @@ angular.module('kombuchadog')
     for (let i = 0; i < $scope.cart.length; i++) {
       $scope.totalItems += Number($scope.cart[i].productQuantity);
     }
-    console.log($scope.totalItems);
     return $scope.totalItems;
   }
 
   mainSrvc.getCart().then((response) => {
     $scope.cart = response.data;
-    console.log('Cart in controller', $scope.cart);
     cartTotal();
   }).catch((err) => {
     console.log(err);
@@ -38,7 +35,6 @@ angular.module('kombuchadog')
 
 $scope.removeFromCart = (item) => {
   $rootScope.cartTotal = findTotalItems();
-  console.log('remove CTRL', item)
   mainSrvc.removeFromCart(item).then(() => {
     mainSrvc.getCart().then((response) => {
       $scope.cart = response.data;
@@ -53,7 +49,6 @@ $scope.removeFromCart = (item) => {
 
 $scope.updateQuantity = (item) => {
   $rootScope.cartTotal = findTotalItems();
-  console.log(item)
   mainSrvc.updateQuantity(item.productId, item.productQuantity);
     mainSrvc.getCart().then((response) => {
       $scope.cart = response.data;
@@ -69,7 +64,6 @@ var handler = StripeCheckout.configure({
   image: 'https://stripe.com/img/documentation/checkout/marketplace.png',
   locale: 'auto',
   token: function(token) {
-    console.log(token)
     // You can access the token ID with `token.id`.
     // Get the token ID to your server-side code for use.
     mainSrvc.postOrder(token, $scope.subtotal*100, $scope.cart);

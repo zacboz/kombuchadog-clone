@@ -3,7 +3,6 @@ angular.module('kombuchadog')
 
   mainSrvc.getMerchandiseDetails($stateParams.id).then((response) => {
     $scope.details = response.data[0];
-    console.log('detailsCtrl', $scope.details.id);
     if ($scope.details.id < 2) {
       $scope.previous = null;
       $scope.next = true;

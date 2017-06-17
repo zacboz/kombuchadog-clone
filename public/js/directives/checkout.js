@@ -11,7 +11,7 @@ angular.module('kombuchadog').directive('checkout', (mainSrvc) => {
         image: 'https://stripe.com/img/documentation/checkout/marketplace.png',
         locale: 'auto',
         token: function(token) {
-          console.log(token)
+          // console.log(token)
           // You can access the token ID with `token.id`.
           // Get the token ID to your server-side code for use.
           mainSrvc.postOrder(token);
