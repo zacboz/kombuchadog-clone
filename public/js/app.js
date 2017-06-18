@@ -58,4 +58,11 @@ angular.module('kombuchadog', ['ui.router'])
             $urlRouterProvider
                 .otherwise('/');
 
-  });
+  })
+  .run(function ($rootScope, $state, $stateParams, $anchorScroll) {
+
+    $rootScope.$on('$stateChangeStart', function () {
+        $anchorScroll();
+    });
+
+});
